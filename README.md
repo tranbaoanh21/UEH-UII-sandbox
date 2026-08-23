@@ -2,7 +2,6 @@
 
 > Từ ảnh bill rời rạc đến sổ thu - chi có kiểm duyệt theo thời gian thực.
 
-Tài liệu này giúp cả nhóm thống nhất **vấn đề, giải pháp, người dùng và phạm vi sản phẩm đầu tiên** trước khi triển khai. Nội dung được viết cho cả thành viên không chuyên công nghệ.
 
 ## 1. Ý tưởng trong một câu
 
