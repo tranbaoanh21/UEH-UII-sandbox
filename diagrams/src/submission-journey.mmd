@@ -1,0 +1,25 @@
+sequenceDiagram
+    autonumber
+    actor A as Admin / Finance Lead
+    participant P as Nền tảng
+    actor M as Thành viên
+    participant AI as AI đọc bill
+
+    A->>P: Tạo dự án và hạng mục ngân sách
+    P-->>A: Sinh link và mã QR nộp bill
+    A-->>M: Gửi QR + link vào nhóm Zalo
+    M->>P: Mở trang nộp bill, không cần tài khoản
+    M->>P: Nhập tên và tải ảnh bill
+    P->>AI: Yêu cầu trích xuất dữ liệu
+    AI-->>P: Cửa hàng, ngày, số tiền, gợi ý hạng mục
+    P-->>M: Hiển thị kết quả để kiểm tra
+    M->>P: Xác nhận và gửi
+    P-->>A: Tạo bill ở trạng thái Chờ duyệt
+    A->>P: Duyệt / yêu cầu bổ sung / từ chối
+    alt Bill được duyệt
+        P->>P: Cập nhật sổ thu - chi và ngân sách
+        P-->>M: Cho phép tra cứu trạng thái bằng mã bill
+    else Cần bổ sung hoặc bị từ chối
+        P-->>M: Hiển thị trạng thái và lý do
+    end
+

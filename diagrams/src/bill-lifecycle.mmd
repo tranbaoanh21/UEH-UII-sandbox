@@ -1,0 +1,21 @@
+stateDiagram-v2
+    [*] --> DangNhap: Thành viên tải bill
+    DangNhap: Đang nhập liệu
+    DangNhap --> ChoDuyet: Người gửi xác nhận
+    ChoDuyet: Chờ admin duyệt
+    ChoDuyet --> CanBoSung: Thiếu hoặc chưa rõ thông tin
+    CanBoSung: Cần bổ sung
+    CanBoSung --> ChoDuyet: Đã cập nhật
+    ChoDuyet --> TuChoi: Không hợp lệ / không thuộc dự án
+    TuChoi: Bị từ chối
+    ChoDuyet --> DaDuyet: Admin chấp nhận
+    DaDuyet: Đã duyệt
+    DaDuyet --> GhiNhan: Cập nhật ngân sách và sổ thu - chi
+    GhiNhan: Đã ghi nhận
+    GhiNhan --> [*]
+
+    note right of DaDuyet
+      Duyệt nội bộ không đồng nghĩa
+      ngân hàng đã xác nhận giao dịch.
+    end note
+

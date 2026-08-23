@@ -1,0 +1,27 @@
+flowchart LR
+    subgraph MVP["MVP - Chứng minh giá trị cốt lõi"]
+        M1["Admin tạo dự án<br/>và ngân sách"]
+        M2["Link / QR nộp bill<br/>không cần tài khoản"]
+        M3["AI đọc bill<br/>+ người gửi xác nhận"]
+        M4["Admin duyệt<br/>+ cảnh báo cơ bản"]
+        M5["Dashboard, tìm kiếm<br/>và xuất báo cáo"]
+        M6["Chatbot hỏi dữ liệu<br/>đã được duyệt"]
+        M1 --> M2 --> M3 --> M4 --> M5 --> M6
+    end
+
+    subgraph NEXT["Giai đoạn sau - Khi đã có nhu cầu thật"]
+        N1["Nhiều admin<br/>và phân quyền sâu"]
+        N2["Nhắc nộp bill<br/>tự động"]
+        N3["Ứng dụng mobile"]
+        N4["Đối soát sao kê /<br/>cổng thanh toán"]
+        N5["Tích hợp Zalo OA<br/>và hệ sinh thái đối tác"]
+        N1 --> N2 --> N3 --> N4 --> N5
+    end
+
+    MVP ==> NEXT
+
+    classDef mvp fill:#EAF4FF,stroke:#0866A8,color:#0B3558,stroke-width:1.5px;
+    classDef next fill:#F3F4F6,stroke:#6B7280,color:#374151,stroke-dasharray: 5 3;
+    class M1,M2,M3,M4,M5,M6 mvp;
+    class N1,N2,N3,N4,N5 next;
+

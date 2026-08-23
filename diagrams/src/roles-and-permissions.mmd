@@ -1,0 +1,34 @@
+flowchart TB
+    PROJECT["Một dự án / sự kiện"]
+
+    subgraph ADMIN["Admin / Finance Lead - có đăng nhập"]
+        A1["Tạo dự án và ngân sách"]
+        A2["Chia sẻ QR / link"]
+        A3["Kiểm tra và duyệt bill"]
+        A4["Xem dashboard, báo cáo, chatbot"]
+    end
+
+    subgraph MEMBER["Thành viên - không cần tài khoản"]
+        M1["Nhập tên người gửi / người thanh toán"]
+        M2["Tải ảnh và kiểm tra dữ liệu AI"]
+        M3["Nhận mã bill để xem trạng thái"]
+    end
+
+    subgraph VIEWER["Lead / người xem minh bạch"]
+        V1["Xem số liệu đã được duyệt"]
+        V2["Không thấy dữ liệu nhạy cảm"]
+    end
+
+    PROJECT --> ADMIN
+    PROJECT --> MEMBER
+    PROJECT --> VIEWER
+
+    classDef root fill:#073B66,stroke:#073B66,color:#FFFFFF,stroke-width:2px;
+    classDef admin fill:#EAF4FF,stroke:#0866A8,color:#0B3558;
+    classDef member fill:#FFF7E6,stroke:#D97706,color:#78350F;
+    classDef viewer fill:#ECFDF5,stroke:#15803D,color:#14532D;
+    class PROJECT root;
+    class A1,A2,A3,A4 admin;
+    class M1,M2,M3 member;
+    class V1,V2 viewer;
+

@@ -1,0 +1,39 @@
+flowchart TB
+    subgraph NOW["Hiện trạng phân tán"]
+        direction LR
+        Z["Bill trong Zalo / Messenger"]
+        D["Ảnh trong Drive"]
+        S["Số liệu trong Sheets"]
+    end
+
+    subgraph PRODUCT["Nền tảng minh bạch tài chính"]
+        direction TB
+        IN["Một cổng nộp bill<br/>bằng link hoặc QR"]
+        AI["AI đọc và chuẩn hóa<br/>thông tin trên bill"]
+        RV["Admin kiểm tra<br/>và phê duyệt"]
+        LD["Sổ thu - chi tập trung<br/>có dấu vết kiểm duyệt"]
+    end
+
+    subgraph VALUE["Giá trị nhận được"]
+        direction LR
+        F["Tìm bill nhanh"]
+        B["Biết ngân sách còn lại"]
+        R["Báo cáo rõ ràng"]
+        T["Minh bạch với Lead,<br/>thành viên và nhà tài trợ"]
+    end
+
+    Z --> IN
+    D --> IN
+    S --> IN
+    IN --> AI --> RV --> LD
+    LD --> F
+    LD --> B
+    LD --> R
+    LD --> T
+
+    classDef pain fill:#FFF1F2,stroke:#BE123C,color:#881337,stroke-width:1.5px;
+    classDef core fill:#EAF4FF,stroke:#0866A8,color:#0B3558,stroke-width:2px;
+    classDef value fill:#ECFDF5,stroke:#15803D,color:#14532D,stroke-width:1.5px;
+    class Z,D,S pain;
+    class IN,AI,RV,LD core;
+    class F,B,R,T value;

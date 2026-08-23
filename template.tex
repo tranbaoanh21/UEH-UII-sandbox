@@ -1,0 +1,342 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Arial}
+\setsansfont{Arial}
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{eso-pic}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tcolorbox}
+\usepackage{microtype}
+\usepackage{lastpage}
+\usepackage[unicode,colorlinks=true,linkcolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
+
+\geometry{left=2.2cm,right=2.2cm,top=2.5cm,bottom=2.3cm,headheight=44pt}
+\graphicspath{{diagrams/rendered/}{assets/}}
+
+\definecolor{Primary}{HTML}{075A91}
+\definecolor{PrimaryDark}{HTML}{073B66}
+\definecolor{PrimaryLight}{HTML}{EAF4FF}
+\definecolor{Accent}{HTML}{1493D1}
+\definecolor{Success}{HTML}{15803D}
+\definecolor{Warning}{HTML}{D97706}
+\definecolor{Danger}{HTML}{BE123C}
+\definecolor{Ink}{HTML}{1F2937}
+\definecolor{Muted}{HTML}{64748B}
+\definecolor{Line}{HTML}{D9E2EC}
+\definecolor{Paper}{HTML}{F8FAFC}
+
+\hypersetup{
+  pdftitle={Nền tảng quản lý chứng từ và minh bạch tài chính},
+  pdfauthor={Trần Nhật Bảo Anh},
+  pdfsubject={Tài liệu thống nhất ý tưởng sản phẩm - UII Sandbox 2026}
+}
+
+\titleformat{\section}{\sffamily\Large\bfseries\color{PrimaryDark}}{\thesection.}{0.55em}{}
+\titleformat{\subsection}{\sffamily\large\bfseries\color{Primary}}{\thesubsection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{1.5em}{0.7em}
+\titlespacing*{\subsection}{0pt}{1.1em}{0.45em}
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.3em,topsep=0.35em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.35em,topsep=0.35em}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\renewcommand{\arraystretch}{1.25}
+\renewcommand{\contentsname}{MỤC LỤC}
+\renewcommand{\figurename}{Hình}
+\renewcommand{\tablename}{Bảng}
+
+\newtcolorbox{keybox}[1][]{
+  colback=PrimaryLight,
+  colframe=Primary,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=4mm,right=4mm,top=3mm,bottom=3mm,
+  fontupper=\sffamily,
+  #1
+}
+
+\newtcolorbox{warningbox}[1][]{
+  colback=orange!7,
+  colframe=Warning,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=4mm,right=4mm,top=3mm,bottom=3mm,
+  #1
+}
+
+\newcommand{\diagram}[3]{%
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=#2\textwidth,height=0.70\textheight,keepaspectratio]{#1}
+    \caption{#3}
+  \end{figure}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{%
+  \begin{minipage}[c]{0.75cm}
+    \includegraphics[height=0.72cm]{\detokenize{logobkheader (3).png}}
+  \end{minipage}\hspace{0.2cm}%
+  \begin{minipage}[c]{8.7cm}
+    \sffamily\footnotesize\bfseries\color{PrimaryDark}
+    TÀI LIỆU THỐNG NHẤT Ý TƯỞNG SẢN PHẨM\\[-1pt]
+    \normalfont\scriptsize\color{Muted} UII Sandbox 2026
+  \end{minipage}
+}
+\rhead{\sffamily\footnotesize\color{Muted} Minh bạch tài chính}
+\lfoot{\sffamily\scriptsize\color{Muted} Trần Nhật Bảo Anh}
+\rfoot{\sffamily\scriptsize\color{Muted} Trang \thepage/\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \AddToShipoutPictureBG*{%
+    \AtPageLowerLeft{\includegraphics[width=\paperwidth,height=\paperheight]{\detokenize{bg (3).png}}}%
+  }
+  \centering
+  \vspace*{1.0cm}
+  \includegraphics[width=3.2cm]{\detokenize{logobk (3).png}}
+
+  \vspace{1.2cm}
+  {\sffamily\small\bfseries\color{Primary}\MakeUppercase{UII Sandbox 2026}}\\[0.35cm]
+  {\sffamily\fontsize{25pt}{31pt}\selectfont\bfseries\color{PrimaryDark}
+    NỀN TẢNG QUẢN LÝ CHỨNG TỪ\\[0.15cm]
+    VÀ MINH BẠCH TÀI CHÍNH}
+
+  \vspace{0.7cm}
+  {\sffamily\Large\color{Ink} Tài liệu thống nhất ý tưởng sản phẩm}
+
+  \vspace{1.0cm}
+  \begin{keybox}[width=0.76\textwidth]
+    \centering\large\bfseries
+    Từ ảnh bill rời rạc đến sổ thu - chi\\
+    có kiểm duyệt theo thời gian thực.
+  \end{keybox}
+
+  \vfill
+  \begin{tabular}{>{\sffamily\bfseries}l l}
+    Người thực hiện: & Trần Nhật Bảo Anh \\
+    Mục đích: & Trình bày và thống nhất ý tưởng với đội ngũ \\
+    Phiên bản: & MVP Concept - 23/08/2026
+  \end{tabular}
+
+  \vspace{1.0cm}
+  {\sffamily\bfseries Thành phố Hồ Chí Minh, 2026}
+  \vspace{0.6cm}
+\end{titlepage}
+
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+
+\section{Tóm tắt điều cần thống nhất}
+
+\begin{keybox}
+\textbf{Ý tưởng trong một câu:} Nền tảng dành cho CLB, nhóm thiện nguyện và dự án cộng đồng, nơi thành viên nộp bill bằng link hoặc QR mà không cần tài khoản; AI hỗ trợ đọc bill; admin kiểm tra, phê duyệt và biến bill thành dữ liệu thu - chi tập trung, dễ tra cứu và minh bạch.
+\end{keybox}
+
+Sản phẩm giải quyết một đoạn quy trình đang bị chia nhỏ giữa tin nhắn, ảnh, thư mục lưu trữ và bảng tính. Trọng tâm không phải tạo thêm một nơi cất ảnh, mà là đảm bảo bill được thu đúng lúc, chuyển thành dữ liệu có cấu trúc và đi qua một quy trình kiểm duyệt rõ ràng.
+
+\subsection{Quyết định sản phẩm đã chốt}
+
+\begin{itemize}
+  \item Chỉ admin hoặc Finance Lead cần đăng nhập trong MVP.
+  \item Thành viên nộp bill không cần tài khoản, chỉ cần link hoặc QR của dự án.
+  \item AI chỉ hỗ trợ đọc và gợi ý; người gửi kiểm tra, admin quyết định.
+  \item Chỉ bill đã duyệt mới cập nhật ngân sách, báo cáo và chatbot.
+  \item Việc admin duyệt bill không đồng nghĩa ngân hàng đã xác nhận giao dịch.
+  \item Tích hợp ngân hàng, ví điện tử và Zalo OA nằm ngoài MVP.
+\end{itemize}
+
+\section{Vấn đề thực tế}
+
+Trong một CLB hoặc dự án cộng đồng, thành viên thường gửi bill qua Zalo hoặc Messenger; ảnh được gom vào Drive; số liệu lại được nhập vào Sheets. Mỗi công cụ chỉ giải quyết một phần nhỏ, khiến quy trình bị đứt đoạn.
+
+\begin{itemize}
+  \item Bill bị trôi, mờ, thiếu thông tin, nhập trùng hoặc thất lạc.
+  \item Người phụ trách phải nhắc thành viên và nhập lại dữ liệu thủ công.
+  \item Khi cần tìm lại một bill, phải dò qua nhiều cuộc trò chuyện và thư mục.
+  \item Giữa dự án, Lead khó biết chính xác ngân sách còn lại.
+  \item Cuối dự án, người phụ trách mất thời gian gom và đối soát trước khi lập báo cáo.
+\end{itemize}
+
+\begin{warningbox}
+\textbf{Insight cần kiểm chứng từ khảo sát:} “Làm báo cáo có thể chỉ mất một buổi, nhưng gom đủ bill lại mất cả tuần, có khi lâu hơn.” Các tỷ lệ trong bản chuẩn bị chỉ được dùng khi đã có dữ liệu khảo sát thật và phương pháp thu thập rõ ràng.
+\end{warningbox}
+
+\section{Giải pháp và giá trị cốt lõi}
+
+\diagram{product-overview.pdf}{1.0}{Từ dữ liệu phân tán đến một quy trình tài chính có kiểm duyệt.}
+
+Giải pháp tập trung vào sáu bước nối tiếp: thu bill tại nguồn, lưu tập trung, AI trích xuất, người dùng xác nhận, admin kiểm duyệt và cập nhật sổ thu - chi. Khi dữ liệu đã thống nhất, dashboard, báo cáo và chatbot trở thành đầu ra tự nhiên của cùng một nguồn dữ liệu.
+
+\subsection{Điểm khác biệt}
+
+\begin{keybox}
+\centering\bfseries
+Nộp bill không cần tài khoản $\rightarrow$ AI số hóa $\rightarrow$ người gửi xác nhận $\rightarrow$ admin kiểm duyệt $\rightarrow$ cập nhật ngân sách $\rightarrow$ minh bạch có kiểm soát.
+\end{keybox}
+
+USP không chỉ là “AI đọc bill”. OCR là một thành phần; giá trị chính là quy trình khép kín giúp tổ chức biến ảnh bill thành dữ liệu có trách nhiệm và có thể sử dụng để ra quyết định.
+
+\section{Người sử dụng và quyền hạn}
+
+\diagram{roles-and-permissions.pdf}{0.91}{Ba góc nhìn xoay quanh một dự án.}
+
+\subsection{Admin / Finance Lead}
+
+Admin là người duy nhất cần đăng nhập trong MVP. Người này tạo dự án và ngân sách, chia sẻ QR, kiểm tra bill, duyệt hoặc từ chối, theo dõi dashboard và xuất báo cáo.
+
+Prototype có thể chỉ có một tài khoản admin. Trong mô hình sản phẩm dài hạn, mỗi tổ chức hoặc dự án sẽ có Finance Admin riêng.
+
+\subsection{Thành viên nộp bill}
+
+Thành viên mở link từ Zalo hoặc quét QR, nhập tên, tải ảnh, kiểm tra dữ liệu AI rồi gửi. Vì không đăng nhập, tên là thông tin tự khai chứ không phải danh tính đã xác minh. Hệ thống trả mã bill để người gửi tra cứu trạng thái.
+
+\subsection{Lead, thành viên hoặc nhà tài trợ}
+
+Trang minh bạch, nếu được bật, chỉ hiển thị các khoản đã duyệt và đã che thông tin nhạy cảm. Người xem không có quyền sửa, duyệt hoặc xem dữ liệu nội bộ.
+
+\section{Hành trình từ QR đến báo cáo}
+
+\diagram{submission-journey.pdf}{1.0}{Hành trình hoàn chỉnh của một bill.}
+
+\subsection{Tạo dự án và chia sẻ cổng nộp bill}
+
+Admin tạo dự án, tổng ngân sách và các hạng mục. Hệ thống sinh một URL công khai có mã khó đoán cùng mã QR tương ứng. Admin gửi cả QR và link vào nhóm Zalo: link tiện khi dùng cùng điện thoại; QR tiện khi quét từ máy khác hoặc quét từ ảnh.
+
+\subsection{Nộp bill không cần tài khoản}
+
+Trang nộp bill luôn hiển thị rõ tên dự án. Người nộp cung cấp tên người gửi, tên người thanh toán nếu khác, ảnh bill và mục đích khoản chi. QR chỉ xác định dự án, không xác định danh tính người nộp và không cấp quyền quản trị.
+
+\subsection{AI đọc, con người xác nhận}
+
+AI đề xuất tên cửa hàng, ngày, tổng tiền, số hóa đơn và hạng mục ngân sách. Người gửi được xem và sửa kết quả trước khi gửi. Bill sau đó chuyển vào hàng chờ của admin.
+
+\subsection{Duyệt và cập nhật ngân sách}
+
+Admin xem ảnh gốc bên cạnh dữ liệu đã trích xuất, sau đó duyệt, yêu cầu bổ sung hoặc từ chối. Chỉ quyết định duyệt mới làm thay đổi số liệu ngân sách và báo cáo.
+
+\section{Vòng đời và ý nghĩa trạng thái bill}
+
+\diagram{bill-lifecycle.pdf}{0.82}{Mỗi bill có trạng thái rõ ràng và truy vết được.}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{>{\bfseries\color{PrimaryDark}}p{3.1cm} X}
+\toprule
+Trạng thái & Ý nghĩa \\
+\midrule
+Đang nhập liệu & Người gửi chưa hoàn tất hoặc chưa xác nhận dữ liệu. \\
+Chờ duyệt & Bill đã gửi và đang chờ admin kiểm tra. \\
+Cần bổ sung & Thiếu ảnh, mục đích hoặc thông tin chưa rõ. \\
+Bị từ chối & Bill không hợp lệ, bị trùng hoặc không thuộc dự án. \\
+Đã duyệt & Admin chấp nhận chứng từ về mặt nội bộ. \\
+Đã ghi nhận & Số liệu đã được cập nhật vào ngân sách và sổ thu - chi. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{warningbox}
+\textbf{Ranh giới quan trọng:} ảnh bill hoặc ảnh chuyển khoản không chứng minh tuyệt đối rằng giao dịch đã được ngân hàng hoàn tất. “Đã duyệt” chỉ có nghĩa chứng từ được tổ chức chấp nhận. Xác minh ngân hàng cần đối soát sao kê hoặc tích hợp chính thức và nằm ngoài MVP.
+\end{warningbox}
+
+\section{Vai trò của AI và chatbot}
+
+\subsection{AI đọc bill}
+
+AI giúp nhận diện các trường cơ bản như đơn vị bán hàng, ngày, tổng tiền, số hóa đơn và gợi ý hạng mục. AI không tự phê duyệt và không tự thay đổi ngân sách. Ảnh mờ, chữ viết tay hoặc mẫu bill lạ luôn có khả năng bị đọc sai.
+
+\subsection{Cảnh báo hỗ trợ kiểm duyệt}
+
+Hệ thống có thể cảnh báo bill có khả năng trùng, ảnh quá mờ, thiếu ngày, số tiền không nhất quán hoặc hạng mục gần vượt ngân sách. Cảnh báo là tín hiệu để admin xem xét, không phải phán quyết tự động.
+
+\subsection{Chatbot tra cứu}
+
+Chatbot là một cửa tương tác khác trên cùng dữ liệu. Người dùng có thể gửi ảnh bill trong cuộc trò chuyện hoặc hỏi “Tháng này đã chi bao nhiêu?”, “Còn bao nhiêu ngân sách truyền thông?” hay “Bill nào đang chờ duyệt?”. Chatbot chỉ được trả lời từ dữ liệu mà người hỏi có quyền xem.
+
+\section{Phạm vi MVP và hướng mở rộng}
+
+\diagram{mvp-roadmap.pdf}{1.0}{Làm rõ giá trị cốt lõi trước khi mở rộng tích hợp.}
+
+\subsection{Bắt buộc có trong MVP}
+
+\begin{itemize}
+  \item Admin đăng nhập; tạo dự án, ngân sách và hạng mục.
+  \item Sinh link và QR nộp bill; thành viên không cần tài khoản.
+  \item AI đọc các trường cơ bản; người gửi kiểm tra và xác nhận.
+  \item Admin duyệt, yêu cầu bổ sung hoặc từ chối.
+  \item Dashboard ngân sách, tìm kiếm bill và xuất báo cáo cơ bản.
+  \item Chatbot hỏi dữ liệu đã được duyệt.
+\end{itemize}
+
+\subsection{Nếu còn thời gian}
+
+Phát hiện bill có khả năng trùng, cảnh báo gần/vượt ngân sách, mã tra cứu cho người gửi và trang minh bạch công khai có che dữ liệu nhạy cảm.
+
+\subsection{Chưa làm trong MVP}
+
+Xác minh ngân hàng/ví điện tử, Zalo OA, webhook nhận bill tự động, nhiều cấp phê duyệt, ứng dụng mobile riêng, nghiệp vụ kế toán/thuế đầy đủ và hạ tầng phân tán quy mô lớn.
+
+\section{Các màn hình cần cho prototype}
+
+\begin{enumerate}
+  \item \textbf{Admin Login:} cổng vào dành cho Finance Lead.
+  \item \textbf{Dashboard:} ngân sách tổng, đã chi, còn lại và cảnh báo.
+  \item \textbf{Quản lý dự án:} thông tin dự án, ngân sách, hạng mục, QR và link.
+  \item \textbf{Trang nộp bill công khai:} tên dự án, thông tin người gửi, ảnh và dữ liệu AI.
+  \item \textbf{Hàng chờ kiểm duyệt:} lọc bill theo trạng thái và hạng mục.
+  \item \textbf{Chi tiết bill:} ảnh gốc, dữ liệu trích xuất, lịch sử và quyết định duyệt.
+  \item \textbf{Sổ thu - chi và báo cáo:} dữ liệu đã duyệt, tìm kiếm và xuất file.
+  \item \textbf{Chatbot:} upload ảnh hoặc đặt câu hỏi về dữ liệu được phép xem.
+\end{enumerate}
+
+\section{Kịch bản demo đề xuất}
+
+\begin{enumerate}
+  \item Admin tạo “Chiến dịch Mùa hè xanh 2026” với ngân sách 30 triệu đồng.
+  \item Hệ thống sinh QR và link; admin gửi vào nhóm Zalo.
+  \item Một thành viên mở link, nhập tên và tải bill 450.000 đồng.
+  \item AI đọc cửa hàng, ngày, số tiền và đề xuất hạng mục “Vật tư”.
+  \item Thành viên sửa một trường bị đọc sai rồi gửi.
+  \item Admin thấy bill trong hàng chờ, mở ảnh và duyệt.
+  \item Dashboard cập nhật số tiền đã chi và ngân sách còn lại.
+  \item Teammate hỏi chatbot: “Dự án đã chi bao nhiêu cho vật tư?”.
+  \item Chatbot trả lời từ bill đã duyệt và dẫn tới danh sách liên quan.
+\end{enumerate}
+
+\section{Thông điệp kết}
+
+\vspace{0.8cm}
+\begin{keybox}
+\centering
+{\sffamily\Large\bfseries\color{PrimaryDark}
+Chúng ta không xây thêm một nơi để cất ảnh bill.}\\[0.4cm]
+{\sffamily\large
+Chúng ta xây một quy trình giúp bill được thu đúng lúc, đọc nhanh, kiểm duyệt rõ ràng và biến thành dữ liệu tài chính có thể tin cậy để ra quyết định.}
+\end{keybox}
+
+\vfill
+\begin{center}
+\sffamily\color{Muted}
+Tài liệu dùng để thống nhất phạm vi sản phẩm trước khi thiết kế và triển khai MVP.
+\end{center}
+
+\end{document}
