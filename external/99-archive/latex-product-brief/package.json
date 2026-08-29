@@ -1,0 +1,14 @@
+{
+  "name": "ueh-uii-sandbox-product-brief",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Product brief and diagrams for the UII Sandbox 2026 financial transparency concept",
+  "scripts": {
+    "diagrams": "mmdc -i ../../03-design/diagrams/src/product-overview.mmd -o ../../03-design/diagrams/rendered/product-overview.svg -b transparent && mmdc -i ../../03-design/diagrams/src/product-overview.mmd -o ../../03-design/diagrams/rendered/product-overview.pdf -b transparent && mmdc -i ../../03-design/diagrams/src/submission-journey.mmd -o ../../03-design/diagrams/rendered/submission-journey.svg -b transparent && mmdc -i ../../03-design/diagrams/src/submission-journey.mmd -o ../../03-design/diagrams/rendered/submission-journey.pdf -b transparent && mmdc -i ../../03-design/diagrams/src/roles-and-permissions.mmd -o ../../03-design/diagrams/rendered/roles-and-permissions.svg -b transparent && mmdc -i ../../03-design/diagrams/src/roles-and-permissions.mmd -o ../../03-design/diagrams/rendered/roles-and-permissions.pdf -b transparent && mmdc -i ../../03-design/diagrams/src/bill-lifecycle.mmd -o ../../03-design/diagrams/rendered/bill-lifecycle.svg -b transparent && mmdc -i ../../03-design/diagrams/src/bill-lifecycle.mmd -o ../../03-design/diagrams/rendered/bill-lifecycle.pdf -b transparent && mmdc -i ../../03-design/diagrams/src/mvp-roadmap.mmd -o ../../03-design/diagrams/rendered/mvp-roadmap.svg -b transparent && mmdc -i ../../03-design/diagrams/src/mvp-roadmap.mmd -o ../../03-design/diagrams/rendered/mvp-roadmap.pdf -b transparent",
+    "pdf": "mkdir -p ../../06-deliverables build-cache && latexmk -xelatex -interaction=nonstopmode -halt-on-error -outdir=build-cache template.tex && cp build-cache/template.pdf ../../06-deliverables/minh-bach-tai-chinh-product-brief.pdf",
+    "build": "npm run diagrams && npm run pdf"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.9.0"
+  }
+}

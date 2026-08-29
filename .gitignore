@@ -1,11 +1,7 @@
 node_modules/
+.next/
+.vinext/
+.wrangler/
+dist/
 .DS_Store
-*.aux
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.toc
-*.xdv
-tmp/
 

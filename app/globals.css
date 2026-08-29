@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #f4f1e9;
+  --foreground: #182822;
+  --canvas: #f4f1e9;
+  --paper: #fbfaf6;
+  --ink: #182822;
+  --forest: #173f34;
+  --muted: #69756f;
+  --line: #d8d8d0;
+  --sage: #dce9e2;
+  --coral: #d96f3d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern' 1, 'ss01' 1;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-forest: var(--forest);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-sage: var(--sage);
+  --color-coral: var(--coral);
+}
+
+.display-title {
+  color: var(--forest);
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(2.3rem, 4vw, 3.45rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.eyebrow {
+  color: var(--muted);
+  font-size: 0.625rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  flex: none;
+  border-radius: 999px;
+  background: #4ba27f;
+  box-shadow: 0 0 0 4px rgb(75 162 127 / 12%);
+}
+
+.proof-panel {
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+textarea:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: #f2c2aa;
+  color: #173f34;
+}

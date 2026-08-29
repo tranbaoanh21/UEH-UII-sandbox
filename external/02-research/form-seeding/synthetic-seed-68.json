@@ -1,0 +1,2682 @@
+{
+  "generatedAt": "2026-08-23T16:55:44.618Z",
+  "synthetic": true,
+  "summary": {
+    "total": 68,
+    "eligible": 64,
+    "ineligible": 4,
+    "q16Average": 3.90625,
+    "primaryCount": 20,
+    "primaryQ16Average": 4.4
+  },
+  "targets": {
+    "q1": [
+      20,
+      16,
+      28,
+      4
+    ],
+    "q2": [
+      39,
+      12,
+      6,
+      3,
+      1,
+      3
+    ],
+    "q3": [
+      9,
+      16,
+      22,
+      10,
+      3,
+      4
+    ],
+    "q4": [
+      6,
+      16,
+      25,
+      10,
+      5,
+      2
+    ],
+    "q5": [
+      6,
+      28,
+      19,
+      8,
+      2,
+      1
+    ],
+    "q6": [
+      3,
+      10,
+      17,
+      20,
+      13,
+      1
+    ],
+    "q7": [
+      13,
+      26,
+      16,
+      6,
+      2,
+      1,
+      0
+    ],
+    "q8": [
+      3,
+      13,
+      26,
+      10,
+      3,
+      9,
+      0
+    ],
+    "q9": [
+      27,
+      50,
+      12,
+      25,
+      47,
+      3,
+      12
+    ],
+    "q10": [
+      46,
+      34,
+      6,
+      13,
+      2,
+      5
+    ],
+    "q11": [
+      3,
+      13,
+      16,
+      12,
+      8,
+      8,
+      4
+    ],
+    "q12": [
+      5,
+      14,
+      18,
+      17,
+      7,
+      3
+    ],
+    "q13": [
+      41,
+      29,
+      23,
+      14,
+      13,
+      11,
+      19,
+      18,
+      23
+    ],
+    "q13Other": 5,
+    "q14": [
+      20,
+      16,
+      13,
+      11,
+      3,
+      1,
+      0
+    ],
+    "q15": [
+      39,
+      29,
+      23,
+      12,
+      25,
+      16,
+      10,
+      14,
+      13,
+      8
+    ],
+    "q15Other": 7,
+    "q16": [
+      2,
+      5,
+      10,
+      27,
+      20
+    ],
+    "q17": 19,
+    "q18": [
+      16,
+      14,
+      8,
+      11,
+      6,
+      2,
+      3,
+      1,
+      3
+    ],
+    "q19": [
+      29,
+      25,
+      8,
+      2
+    ]
+  },
+  "rows": [
+    {
+      "id": 1,
+      "eligible": true,
+      "complexity": 0,
+      "pressure": 0,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Dưới 10 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "1-3 người.",
+      "q6": "Đã gom đủ ngay trong lúc dự án diễn ra.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "Dưới 1 phút.",
+      "q12": "Có thể trả lời chính xác ngay.",
+      "q14": "Hiếm khi xảy ra.",
+      "q13": [
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Báo cáo bị trễ hạn."
+      ],
+      "q16": "4",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 2,
+      "eligible": true,
+      "complexity": 0,
+      "pressure": 0.18112205739598722,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Dưới 10 triệu VNĐ.",
+      "q4": "Dưới 10 khoản.",
+      "q5": "1-3 người.",
+      "q6": "Đã gom đủ ngay trong lúc dự án diễn ra.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Có thể trả lời chính xác ngay.",
+      "q14": "Thỉnh thoảng xảy ra.",
+      "q13": [
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn."
+      ],
+      "q16": "4",
+      "q18": "Cảnh báo khi khoản chi gần/vượt ngân sách hoặc sai hạng mục.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 3,
+      "eligible": true,
+      "complexity": 0.1179615334654227,
+      "pressure": 0,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "Dưới 10 khoản.",
+      "q5": "4-10 người.",
+      "q6": "Đã gom đủ ngay trong lúc dự án diễn ra.",
+      "q7": "0,5-1 ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "Dưới 1 phút.",
+      "q12": "Có thể trả lời chính xác ngay.",
+      "q14": "Thỉnh thoảng xảy ra.",
+      "q13": [
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q16": "2",
+      "q18": "Nhắc thành viên nộp hoặc bổ sung chứng từ.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 4,
+      "eligible": true,
+      "complexity": 0.013059740224853157,
+      "pressure": 0,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Dưới 10 triệu VNĐ.",
+      "q4": "Dưới 10 khoản.",
+      "q5": "1-3 người.",
+      "q6": "1-3 ngày.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "Không cần nhắc.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Có thể trả lời chính xác ngay.",
+      "q14": "Hiếm khi xảy ra.",
+      "q13": [
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q16": "1",
+      "q17": "Chỉ riêng việc nhắc mọi người đặt đúng tên file đã mất nhiều thời gian hơn cả khâu lập báo cáo.",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 5,
+      "eligible": true,
+      "complexity": 0,
+      "pressure": 0.19910143208224326,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Dưới 10 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "1-3 người.",
+      "q6": "1-3 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Forms."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "Dưới 1 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Thỉnh thoảng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q16": "2",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 6,
+      "eligible": true,
+      "complexity": 0.11648192419670522,
+      "pressure": 0,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Dưới 10 triệu VNĐ.",
+      "q4": "Dưới 10 khoản.",
+      "q5": "4-10 người.",
+      "q6": "1-3 ngày.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "Không cần nhắc.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Google Forms.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nộp chứng từ giấy trực tiếp."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Có thể trả lời chính xác ngay.",
+      "q14": "Chưa từng xảy ra.",
+      "q13": [],
+      "q15": [],
+      "q13Other": "Không gặp tình huống nào",
+      "q15Other": "Chưa gây hậu quả đáng kể",
+      "q16": "1",
+      "q18": "Theo dõi số tiền còn lại của từng hạng mục theo thời gian thực.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 7,
+      "eligible": true,
+      "complexity": 0.17162881842814387,
+      "pressure": 0.24661608621478082,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "1-3 ngày.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Google Forms.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi."
+      ],
+      "q15": [
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ."
+      ],
+      "q16": "3",
+      "q18": "Nhắc thành viên nộp hoặc bổ sung chứng từ.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 8,
+      "eligible": true,
+      "complexity": 0.1705794830294326,
+      "pressure": 0.26255009568762033,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "Dưới 10 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Email."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi."
+      ],
+      "q15": [
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân."
+      ],
+      "q16": "3",
+      "q17": "Thành viên gửi bill nhưng không ghi tên hoạt động, mình phải hỏi từng người để phân loại lại.",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 9,
+      "eligible": true,
+      "complexity": 0.21731335887219758,
+      "pressure": 0.013441275563091035,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "1-3 ngày.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nộp chứng từ giấy trực tiếp."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Hiếm khi xảy ra.",
+      "q13": [
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q16": "4",
+      "q18": "Cảnh báo khi khoản chi gần/vượt ngân sách hoặc sai hạng mục.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 10,
+      "eligible": true,
+      "complexity": 0.2392387308413163,
+      "pressure": 0.17506715720053762,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Thỉnh thoảng xảy ra.",
+      "q13": [
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu."
+      ],
+      "q15": [
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ."
+      ],
+      "q16": "4",
+      "q17": "Nhà tài trợ yêu cầu giải trình gấp nhưng chứng từ nằm rải rác trên Drive và Zalo nên cả nhóm phải tìm lại từ đầu.",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 11,
+      "eligible": true,
+      "complexity": 0.27703398215584457,
+      "pressure": 0.02328801759518681,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "1-3 ngày.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Thỉnh thoảng xảy ra.",
+      "q13": [
+        "Chứng từ hoặc khoản chi bị nhập trùng."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q16": "3",
+      "q17": "Có bill bị mờ mất phần số tiền, hỏi lại thì người mua cũng không còn nhớ nên mình phải đối chiếu sao kê và lịch sử chuyển khoản.",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 12,
+      "eligible": true,
+      "complexity": 0.1240427336608991,
+      "pressure": 0.14147486480418592,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Dưới 10 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "1-3 người.",
+      "q6": "1-3 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Google Forms.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Thỉnh thoảng xảy ra.",
+      "q13": [
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào"
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q16": "4",
+      "q18": "Nhắc thành viên nộp hoặc bổ sung chứng từ.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 13,
+      "eligible": true,
+      "complexity": 0.25399900359101596,
+      "pressure": 0.0952638490172103,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "1-3 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Thỉnh thoảng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q16": "2",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 14,
+      "eligible": true,
+      "complexity": 0.331613240535371,
+      "pressure": 0.0683931091427803,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Dưới 10 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "1-3 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "Không cần nhắc.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Nộp chứng từ giấy trực tiếp."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Thỉnh thoảng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q13Other": "Khoản hoàn ứng bị ghi nhận chậm",
+      "q15Other": "Nhà tài trợ yêu cầu bổ sung hồ sơ nhiều lần",
+      "q16": "2",
+      "q17": "Mình nhớ nhất lần cả nhóm tranh luận vì số liệu trên Excel và tổng tiền trong nhóm chat không khớp nhau.",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 15,
+      "eligible": true,
+      "complexity": 0.11026116474065929,
+      "pressure": 0.28462572063785047,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Dưới 10 triệu VNĐ.",
+      "q4": "Dưới 10 khoản.",
+      "q5": "1-3 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q13Other": "Ảnh chứng từ bị cắt mất phần ngày tháng",
+      "q16": "3",
+      "q17": "Có giao dịch đúng số tiền nhưng khác ngày trên bill, mình phải kiểm tra lại với cả người mua và thủ quỹ.",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 16,
+      "eligible": true,
+      "complexity": 0.2637180842133239,
+      "pressure": 0.2074734413344413,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân."
+      ],
+      "q15Other": "Mất thêm thời gian họp để đối soát",
+      "q16": "4",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 17,
+      "eligible": true,
+      "complexity": 0.26935034222435206,
+      "pressure": 0.38124975143466144,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Google Forms.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ hoặc khoản chi bị nhập trùng."
+      ],
+      "q15": [
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ."
+      ],
+      "q16": "4",
+      "q17": "Ảnh chuyển khoản không ghi nội dung, vài ngày sau không ai nhớ đó là chi cho hạng mục nào.",
+      "q18": "Theo dõi số tiền còn lại của từng hạng mục theo thời gian thực.",
+      "q19": "Không muốn sử dụng."
+    },
+    {
+      "id": 18,
+      "eligible": true,
+      "complexity": 0.21565919779241086,
+      "pressure": 0.23890125018078834,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "1-3 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Thỉnh thoảng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh."
+      ],
+      "q15": [
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân."
+      ],
+      "q13Other": "Bill nộp không ghi rõ người chi",
+      "q15Other": "Không kịp chốt hoàn ứng cho thành viên",
+      "q16": "3",
+      "q17": "Một khoản bị nhập hai lần vì ảnh được gửi cả trong nhóm lẫn tin nhắn riêng, may là phát hiện trước khi gửi báo cáo.",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 19,
+      "eligible": true,
+      "complexity": 0.3199607466952875,
+      "pressure": 0.2671061693597585,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Chi vượt ngân sách của một hạng mục.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q16": "3",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 20,
+      "eligible": true,
+      "complexity": 0.33892205299343914,
+      "pressure": 0.3574614910641685,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Forms."
+      ],
+      "q10": [
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác.",
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q16": "4",
+      "q18": "Nhắc thành viên nộp hoặc bổ sung chứng từ.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 21,
+      "eligible": true,
+      "complexity": 0.380783325987868,
+      "pressure": 0.4222600499261171,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo."
+      ],
+      "q16": "3",
+      "q17": "Mình nhắc bill gần như mỗi ngày nhưng vẫn có vài khoản chỉ được gửi sau khi sự kiện kết thúc hơn một tuần.",
+      "q18": "Đối chiếu chứng từ với giao dịch.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 22,
+      "eligible": true,
+      "complexity": 0.2114513739105314,
+      "pressure": 0.16753112759906796,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Dưới 10 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Google Forms."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh."
+      ],
+      "q15": [
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau."
+      ],
+      "q16": "4",
+      "q17": "Khi bàn giao cho nhiệm kỳ sau, thư mục chứng từ không có cấu trúc nên các bạn mới gần như phải sắp xếp lại từ đầu.",
+      "q18": "Theo dõi số tiền còn lại của từng hạng mục theo thời gian thực.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 23,
+      "eligible": true,
+      "complexity": 0.46679654135834425,
+      "pressure": 0.22568497525528072,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Thỉnh thoảng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo."
+      ],
+      "q16": "2",
+      "q18": "Nhắc thành viên nộp hoặc bổ sung chứng từ.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 24,
+      "eligible": true,
+      "complexity": 0.23906720262486486,
+      "pressure": 0.46140103589277714,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Chứng từ hoặc khoản chi bị nhập trùng.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu."
+      ],
+      "q15": [
+        "Báo cáo bị trễ hạn.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ."
+      ],
+      "q16": "4",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 25,
+      "eligible": true,
+      "complexity": 0.42883263690862805,
+      "pressure": 0.3095693532610312,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Phần mềm kế toán."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Chi vượt ngân sách của một hạng mục."
+      ],
+      "q15": [
+        "Báo cáo bị trễ hạn.",
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau."
+      ],
+      "q16": "4",
+      "q17": "Có bạn quên lấy hóa đơn nên người phụ trách phải tự bù khoản chênh lệch để kịp chốt sổ.",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 26,
+      "eligible": true,
+      "complexity": 0.3785577965108678,
+      "pressure": 0.551126463082619,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "10-30 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Chi vượt ngân sách của một hạng mục."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn."
+      ],
+      "q16": "4",
+      "q18": "__other_option__",
+      "q18Other": "Phân quyền phê duyệt khoản chi rõ ràng",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 27,
+      "eligible": true,
+      "complexity": 0.46718519101850686,
+      "pressure": 0.3867294405354187,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Có thể trả lời nhưng phải kiểm tra lại một nguồn dữ liệu.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Chứng từ hoặc khoản chi bị nhập trùng."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò."
+      ],
+      "q16": "5",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Chưa có nhu cầu."
+    },
+    {
+      "id": 28,
+      "eligible": true,
+      "complexity": 0.4439660222455859,
+      "pressure": 0.35373521690722554,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Google Forms."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Thỉnh thoảng xảy ra.",
+      "q13": [
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò."
+      ],
+      "q16": "3",
+      "q18": "Nhắc thành viên nộp hoặc bổ sung chứng từ.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 29,
+      "eligible": true,
+      "complexity": 0.426050923159346,
+      "pressure": 0.4743926981138066,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Chứng từ hoặc khoản chi bị nhập trùng.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Ảnh hưởng đến uy tín hoặc khả năng xin tài trợ của tổ chức."
+      ],
+      "q16": "4",
+      "q17": "Đến lúc chốt báo cáo mới phát hiện một bạn gửi bill ở tin nhắn riêng từ hai tuần trước, cả nhóm phải lục lại từng đoạn chat.",
+      "q18": "Theo dõi số tiền còn lại của từng hạng mục theo thời gian thực.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 30,
+      "eligible": true,
+      "complexity": 0.5582614852581174,
+      "pressure": 0.38690746448934077,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "1-2 tuần.",
+      "q7": "Dưới nửa ngày.",
+      "q8": "1-3 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Google Forms."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân."
+      ],
+      "q16": "3",
+      "q18": "Cảnh báo khi khoản chi gần/vượt ngân sách hoặc sai hạng mục.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 31,
+      "eligible": true,
+      "complexity": 0.4655640669632703,
+      "pressure": 0.43072324147913604,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "1-2 tuần.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Google Forms.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "6-10 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau.",
+        "Phải giải trình lại với nhà tài trợ."
+      ],
+      "q16": "4",
+      "q17": "Lúc cao điểm có quá nhiều ảnh bill trong group, tin nhắn mới đẩy chứng từ cũ trôi rất nhanh nên tìm lại cực kỳ mệt.",
+      "q18": "Theo dõi số tiền còn lại của từng hạng mục theo thời gian thực.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 32,
+      "eligible": true,
+      "complexity": 0.38510557300411163,
+      "pressure": 0.33677193013019857,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 10 đến dưới 20 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "4-7 ngày.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "1-5 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong khoảng một nửa số dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò."
+      ],
+      "q16": "4",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 33,
+      "eligible": true,
+      "complexity": 0.5301222845399752,
+      "pressure": 0.42358540860936045,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "0,5-1 ngày.",
+      "q8": "11-20 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Forms.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên."
+      ],
+      "q16": "4",
+      "q18": "Theo dõi số tiền còn lại của từng hạng mục theo thời gian thực.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 34,
+      "eligible": true,
+      "complexity": 0.44784457743167877,
+      "pressure": 0.6242128952359781,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "0,5-1 ngày.",
+      "q8": "11-20 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Phải giải trình lại với nhà tài trợ."
+      ],
+      "q16": "4",
+      "q17": "Một bạn đổi điện thoại nên mất ảnh hóa đơn đã chụp, nhóm phải liên hệ cửa hàng xin lại chứng từ.",
+      "q18": "Đối chiếu chứng từ với giao dịch.",
+      "q19": "Chưa có nhu cầu."
+    },
+    {
+      "id": 35,
+      "eligible": true,
+      "complexity": 0.6321820092247799,
+      "pressure": 0.5726913793291897,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nộp chứng từ giấy trực tiếp."
+      ],
+      "q11": "Trên 30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với nhà tài trợ."
+      ],
+      "q16": "4",
+      "q18": "Cảnh báo khi khoản chi gần/vượt ngân sách hoặc sai hạng mục.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 36,
+      "eligible": true,
+      "complexity": 0.5664117643097416,
+      "pressure": 0.4798689381638542,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Báo cáo bị trễ hạn.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản."
+      ],
+      "q16": "3",
+      "q18": "Nhắc thành viên nộp hoặc bổ sung chứng từ.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 37,
+      "eligible": true,
+      "complexity": 0.5074370137089863,
+      "pressure": 0.508060141345486,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "Dự án cộng đồng độc lập.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Chứng từ hoặc khoản chi bị nhập trùng."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản.",
+        "Phải giải trình lại với nhà tài trợ.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò."
+      ],
+      "q15Other": "Phải rà lại toàn bộ lịch sử tin nhắn",
+      "q16": "4",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 38,
+      "eligible": true,
+      "complexity": 0.5555404596962035,
+      "pressure": 0.5396841391455383,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác."
+      ],
+      "q11": "Trên 30 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân."
+      ],
+      "q16": "5",
+      "q18": "__other_option__",
+      "q18Other": "Tạo mã hồ sơ và lịch sử chỉnh sửa cho từng chứng từ",
+      "q19": "Chưa có nhu cầu."
+    },
+    {
+      "id": 39,
+      "eligible": true,
+      "complexity": 0.49515014463104307,
+      "pressure": 0.6848949988232925,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Forms.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "Trên 30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Giao dịch không khớp với chứng từ.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản.",
+        "Ảnh hưởng đến uy tín hoặc khả năng xin tài trợ của tổ chức."
+      ],
+      "q16": "5",
+      "q18": "Cảnh báo khi khoản chi gần/vượt ngân sách hoặc sai hạng mục.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 40,
+      "eligible": true,
+      "complexity": 0.5535501269111409,
+      "pressure": 0.5770908135641366,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "4-10 người.",
+      "q6": "1-2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Phần mềm kế toán."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Chi vượt ngân sách của một hạng mục.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản."
+      ],
+      "q16": "4",
+      "q18": "Đối chiếu chứng từ với giao dịch.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 41,
+      "eligible": true,
+      "complexity": 0.7456133413128555,
+      "pressure": 0.46490784713532773,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Từ 50 đến 100 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác."
+      ],
+      "q11": "Trên 30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Chứng từ hoặc khoản chi bị nhập trùng.",
+        "Giao dịch không khớp với chứng từ.",
+        "Chi vượt ngân sách của một hạng mục."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Ảnh hưởng đến uy tín hoặc khả năng xin tài trợ của tổ chức."
+      ],
+      "q15Other": "Khó bàn giao dữ liệu cho nhiệm kỳ sau",
+      "q16": "4",
+      "q17": "Một bill gửi quá muộn làm báo cáo trễ hạn và mình phải giải thích lại với đơn vị chủ quản.",
+      "q18": "Theo dõi số tiền còn lại của từng hạng mục theo thời gian thực.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 42,
+      "eligible": true,
+      "complexity": 0.5849697799282149,
+      "pressure": 0.7299385209288448,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "Dự án cộng đồng độc lập.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "21-50 người.",
+      "q6": "1-2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "Phải nhắc liên tục nên không thể ước tính.",
+      "q9": [
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "Trên 30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Giao dịch không khớp với chứng từ.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo."
+      ],
+      "q13Other": "Nội dung chuyển khoản quá chung chung",
+      "q16": "5",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 43,
+      "eligible": true,
+      "complexity": 0.5994723966624588,
+      "pressure": 0.5861229958198965,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "Phải nhắc liên tục nên không thể ước tính.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân."
+      ],
+      "q16": "4",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 44,
+      "eligible": true,
+      "complexity": 0.7971605398412794,
+      "pressure": 0.5316619848785922,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "__other_option__",
+      "q2Other": "Ban tổ chức sự kiện sinh viên độc lập",
+      "q3": "Từ 50 đến 100 triệu VNĐ.",
+      "q4": "51-100 khoản.",
+      "q5": "21-50 người.",
+      "q6": "1-2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "Trên 30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Chi vượt ngân sách của một hạng mục.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản.",
+        "Ảnh hưởng đến uy tín hoặc khả năng xin tài trợ của tổ chức."
+      ],
+      "q16": "4",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 45,
+      "eligible": true,
+      "complexity": 0.7166996973892674,
+      "pressure": 0.6782369304308667,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 50 đến 100 triệu VNĐ.",
+      "q4": "51-100 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "3-5 ngày.",
+      "q8": "Phải nhắc liên tục nên không thể ước tính.",
+      "q9": [
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Phải kiểm tra và tổng hợp từ nhiều nguồn khác nhau.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Giao dịch không khớp với chứng từ.",
+        "Chi vượt ngân sách của một hạng mục."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ."
+      ],
+      "q16": "5",
+      "q18": "Theo dõi số tiền còn lại của từng hạng mục theo thời gian thực.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 46,
+      "eligible": true,
+      "complexity": 0.6881575885368512,
+      "pressure": 0.5445905371336266,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "51-100 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "0,5-1 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Thường không xác định được chính xác khi dự án đang diễn ra.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Giao dịch không khớp với chứng từ."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Ảnh hưởng đến uy tín hoặc khả năng xin tài trợ của tổ chức."
+      ],
+      "q16": "4",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 47,
+      "eligible": true,
+      "complexity": 0.7536323295347392,
+      "pressure": 0.7190078756865114,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "Dự án cộng đồng độc lập.",
+      "q3": "Từ 50 đến 100 triệu VNĐ.",
+      "q4": "51-100 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "0,5-1 ngày.",
+      "q8": "11-20 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Forms.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Chi vượt ngân sách của một hạng mục."
+      ],
+      "q15": [
+        "Báo cáo bị trễ hạn.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ."
+      ],
+      "q16": "5",
+      "q17": "Lead hỏi còn bao nhiêu ngân sách nhưng dữ liệu nằm ở ba file khác nhau, mình mất gần một buổi mới trả lời chắc chắn.",
+      "q18": "__other_option__",
+      "q18Other": "Bàn giao dữ liệu tài chính dễ dàng giữa các nhiệm kỳ",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 48,
+      "eligible": true,
+      "complexity": 0.7058446098398418,
+      "pressure": 0.7510955450311303,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "Dự án cộng đồng độc lập.",
+      "q3": "Từ 50 đến 100 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "3-5 ngày.",
+      "q8": "Trên 20 lần.",
+      "q9": [
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Chi vượt ngân sách của một hạng mục.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò.",
+        "Ảnh hưởng đến uy tín hoặc khả năng xin tài trợ của tổ chức."
+      ],
+      "q16": "4",
+      "q18": "Phát hiện chứng từ trùng hoặc dữ liệu sai lệch.",
+      "q19": "Chưa có nhu cầu."
+    },
+    {
+      "id": 49,
+      "eligible": true,
+      "complexity": 0.7672747429087758,
+      "pressure": 0.6983865565061569,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "Dự án cộng đồng độc lập.",
+      "q3": "Từ 50 đến 100 triệu VNĐ.",
+      "q4": "51-100 khoản.",
+      "q5": "21-50 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "0,5-1 ngày.",
+      "q8": "11-20 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Chi vượt ngân sách của một hạng mục.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Báo cáo bị trễ hạn."
+      ],
+      "q15Other": "Phải dời ngày công khai báo cáo",
+      "q16": "5",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 50,
+      "eligible": true,
+      "complexity": 0.7112874899385497,
+      "pressure": 0.6911964876996353,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Từ 50 đến 100 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "11-20 người.",
+      "q6": "1-2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "Trên 20 lần.",
+      "q9": [
+        "Google Forms.",
+        "Sổ sách hoặc chứng từ giấy."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác."
+      ],
+      "q11": "11-30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Chi vượt ngân sách của một hạng mục."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ."
+      ],
+      "q16": "4",
+      "q17": "Có khoản vượt ngân sách nhưng chỉ phát hiện khi tổng hợp cuối kỳ vì trong lúc chạy dự án không có số dư theo hạng mục.",
+      "q18": "Phát hiện chứng từ trùng hoặc dữ liệu sai lệch.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 51,
+      "eligible": true,
+      "complexity": 0.7908496582647786,
+      "pressure": 0.8502358563616872,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "51-100 khoản.",
+      "q5": "11-20 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "3-5 ngày.",
+      "q8": "11-20 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Forms.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Nộp chứng từ giấy trực tiếp."
+      ],
+      "q11": "Trên 30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Chứng từ hoặc khoản chi bị nhập trùng.",
+        "Giao dịch không khớp với chứng từ.",
+        "Chi vượt ngân sách của một hạng mục."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản."
+      ],
+      "q16": "5",
+      "q18": "Tự động tổng hợp và xuất báo cáo tài chính.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 52,
+      "eligible": true,
+      "complexity": 0.67785359271802,
+      "pressure": 0.9724618225498125,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "11-20 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "3-5 ngày.",
+      "q8": "11-20 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "Đã có trường hợp không tìm lại được.",
+      "q12": "Thường không xác định được chính xác khi dự án đang diễn ra.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với nhà tài trợ.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò."
+      ],
+      "q16": "5",
+      "q17": "Bill giấy được gom trong một túi, lúc cần đối chiếu thì có một tờ bị nhòe mực và không đọc được ngày.",
+      "q18": "Cảnh báo khi khoản chi gần/vượt ngân sách hoặc sai hạng mục.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 53,
+      "eligible": true,
+      "complexity": 0.7287646335503086,
+      "pressure": 0.9128483173018321,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "CLB/Đội/Nhóm sinh viên trực thuộc trường hoặc khoa.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "51-100 khoản.",
+      "q5": "11-20 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "Dự án chưa hoàn thành bước này.",
+      "q8": "Phải nhắc liên tục nên không thể ước tính.",
+      "q9": [
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "Mình không nắm rõ.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Chứng từ hoặc khoản chi bị nhập trùng.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò."
+      ],
+      "q16": "5",
+      "q18": "Theo dõi số tiền còn lại của từng hạng mục theo thời gian thực.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 54,
+      "eligible": true,
+      "complexity": 0.9466570656001568,
+      "pressure": 0.7250435585295781,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "__other_option__",
+      "q2Other": "Nhóm gây quỹ cộng đồng tại địa phương",
+      "q3": "Mình không nắm rõ.",
+      "q4": "Mình không nắm rõ.",
+      "q5": "21-50 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "4-10 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "Trên 30 phút.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chi vượt ngân sách của một hạng mục.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ."
+      ],
+      "q16": "4",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Chưa có nhu cầu."
+    },
+    {
+      "id": 55,
+      "eligible": true,
+      "complexity": 0.7445802057627589,
+      "pressure": 0.9370399574423209,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "Tổ chức phi lợi nhuận/quỹ xã hội có đăng ký.",
+      "q3": "Từ 20 đến dưới 50 triệu VNĐ.",
+      "q4": "51-100 khoản.",
+      "q5": "11-20 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "11-20 lần.",
+      "q9": [
+        "Google Sheets."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Google Forms."
+      ],
+      "q11": "Đã có trường hợp không tìm lại được.",
+      "q12": "Thường không xác định được chính xác khi dự án đang diễn ra.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Chứng từ hoặc khoản chi bị nhập trùng.",
+        "Chi vượt ngân sách của một hạng mục.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Báo cáo bị trễ hạn.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với nhà tài trợ.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ."
+      ],
+      "q16": "5",
+      "q18": "Theo dõi số tiền còn lại của từng hạng mục theo thời gian thực.",
+      "q19": "Chưa có nhu cầu."
+    },
+    {
+      "id": 56,
+      "eligible": true,
+      "complexity": 0.969564623311162,
+      "pressure": 1,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Trên 100 triệu VNĐ.",
+      "q4": "51-100 khoản.",
+      "q5": "21-50 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "3-5 ngày.",
+      "q8": "Phải nhắc liên tục nên không thể ước tính.",
+      "q9": [
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Nhắn riêng cho người phụ trách."
+      ],
+      "q11": "Đã có trường hợp không tìm lại được.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Chứng từ hoặc khoản chi bị nhập trùng.",
+        "Chi vượt ngân sách của một hạng mục.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò."
+      ],
+      "q16": "5",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Không muốn sử dụng."
+    },
+    {
+      "id": 57,
+      "eligible": true,
+      "complexity": 0.9895417155139148,
+      "pressure": 0.9499718254944309,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "Dự án CSR của doanh nghiệp.",
+      "q3": "Mình không nắm rõ.",
+      "q4": "Trên 100 khoản.",
+      "q5": "21-50 người.",
+      "q6": "1-2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "Trên 20 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác."
+      ],
+      "q10": [
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác.",
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "Đã có trường hợp không tìm lại được.",
+      "q12": "Thường không xác định được chính xác khi dự án đang diễn ra.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Chi vượt ngân sách của một hạng mục.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản.",
+        "Phải giải trình lại với nhà tài trợ.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò."
+      ],
+      "q16": "5",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Chưa có nhu cầu."
+    },
+    {
+      "id": 58,
+      "eligible": true,
+      "complexity": 0.8462633154541254,
+      "pressure": 0.891966581651941,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Từ 50 đến 100 triệu VNĐ.",
+      "q4": "Trên 100 khoản.",
+      "q5": "11-20 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "11-20 lần.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác.",
+        "Phần mềm kế toán."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "Mình không nắm rõ.",
+      "q12": "Thường không xác định được chính xác khi dự án đang diễn ra.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Chứng từ hoặc khoản chi bị nhập trùng.",
+        "Giao dịch không khớp với chứng từ.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò."
+      ],
+      "q16": "5",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 59,
+      "eligible": true,
+      "complexity": 0.8924287430057302,
+      "pressure": 1,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "Tổ chức phi lợi nhuận/quỹ xã hội có đăng ký.",
+      "q3": "Từ 50 đến 100 triệu VNĐ.",
+      "q4": "Trên 100 khoản.",
+      "q5": "Trên 50 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "Trên 5 ngày.",
+      "q8": "Phải nhắc liên tục nên không thể ước tính.",
+      "q9": [
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Thư mục Google Drive hoặc dịch vụ lưu trữ khác."
+      ],
+      "q11": "Mình không nắm rõ.",
+      "q12": "Mình không nắm rõ.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Không xác định được khoản chi thuộc hạng mục ngân sách nào",
+        "Chứng từ hoặc khoản chi bị nhập trùng.",
+        "Chi vượt ngân sách của một hạng mục.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Báo cáo bị trễ hạn.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản."
+      ],
+      "q16": "5",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 60,
+      "eligible": true,
+      "complexity": 1,
+      "pressure": 0.8145598109858111,
+      "q1": "Có, mình là người phụ trách chính về tài chính/chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Mình không nắm rõ.",
+      "q4": "Mình không nắm rõ.",
+      "q5": "Mình không nắm rõ.",
+      "q6": "1-2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "11-20 lần.",
+      "q9": [
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Google Forms."
+      ],
+      "q11": "Đã có trường hợp không tìm lại được.",
+      "q12": "Thường không xác định được chính xác khi dự án đang diễn ra.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Giao dịch không khớp với chứng từ.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò."
+      ],
+      "q16": "5",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 61,
+      "eligible": true,
+      "complexity": 0.8321797557175159,
+      "pressure": 1,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "Tổ chức phi lợi nhuận/quỹ xã hội có đăng ký.",
+      "q3": "Trên 100 triệu VNĐ.",
+      "q4": "Trên 100 khoản.",
+      "q5": "21-50 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "1-2 ngày.",
+      "q8": "11-20 lần.",
+      "q9": [
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger.",
+        "Google Forms."
+      ],
+      "q11": "Đã có trường hợp không tìm lại được.",
+      "q12": "Mình không nắm rõ.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Giao dịch không khớp với chứng từ.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản.",
+        "Phải giải trình lại với nhà tài trợ.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò.",
+        "Ảnh hưởng đến uy tín hoặc khả năng xin tài trợ của tổ chức."
+      ],
+      "q16": "5",
+      "q18": "Nhắc thành viên nộp hoặc bổ sung chứng từ.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 62,
+      "eligible": true,
+      "complexity": 0.9099695410346612,
+      "pressure": 0.9603133742278441,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "Dự án cộng đồng độc lập.",
+      "q3": "Mình không nắm rõ.",
+      "q4": "51-100 khoản.",
+      "q5": "21-50 người.",
+      "q6": "Mình không nắm rõ.",
+      "q7": "1-2 ngày.",
+      "q8": "Phải nhắc liên tục nên không thể ước tính.",
+      "q9": [
+        "Microsoft Excel.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "Đã có trường hợp không tìm lại được.",
+      "q12": "Chỉ biết chính xác sau khi gom đủ chứng từ và đối soát.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với Lead, nhà trường hoặc đơn vị chủ quản."
+      ],
+      "q16": "5",
+      "q18": "Theo dõi số tiền còn lại của từng hạng mục theo thời gian thực.",
+      "q19": "Có, mình muốn đăng ký tham gia."
+    },
+    {
+      "id": 63,
+      "eligible": true,
+      "complexity": 0.8896805370645597,
+      "pressure": 0.8782160637062043,
+      "q1": "Có, mình hỗ trợ người phụ trách tài chính/chứng từ.",
+      "q2": "__other_option__",
+      "q2Other": "Mạng lưới tình nguyện viên liên trường",
+      "q3": "Từ 50 đến 100 triệu VNĐ.",
+      "q4": "Trên 100 khoản.",
+      "q5": "11-20 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "3-5 ngày.",
+      "q8": "Phải nhắc liên tục nên không thể ước tính.",
+      "q9": [
+        "Google Sheets.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Nhắn riêng cho người phụ trách.",
+        "Email."
+      ],
+      "q11": "Đã có trường hợp không tìm lại được.",
+      "q12": "Thường không xác định được chính xác khi dự án đang diễn ra.",
+      "q14": "Xảy ra trong phần lớn dự án.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Giao dịch không khớp với chứng từ.",
+        "Chi vượt ngân sách của một hạng mục."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Báo cáo bị trễ hạn.",
+        "Phải điều chỉnh hoặc cắt giảm ngân sách ở giai đoạn sau.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với nhà tài trợ.",
+        "Gây mâu thuẫn hoặc căng thẳng trong nội bộ."
+      ],
+      "q16": "5",
+      "q17": "Mình từng làm xong báo cáo rồi mới nhận thêm ba bill cũ, cuối cùng phải sửa lại toàn bộ số liệu.",
+      "q18": "Tự động nhập dữ liệu từ bill, hóa đơn hoặc ảnh chuyển khoản.",
+      "q19": "Chưa có nhu cầu."
+    },
+    {
+      "id": 64,
+      "eligible": true,
+      "complexity": 1,
+      "pressure": 0.9363336225179956,
+      "q1": "Có, mình là thành viên thường phát sinh khoản chi và nộp chứng từ.",
+      "q2": "Nhóm thiện nguyện tự phát.",
+      "q3": "Trên 100 triệu VNĐ.",
+      "q4": "31-50 khoản.",
+      "q5": "Trên 50 người.",
+      "q6": "Trên 2 tuần.",
+      "q7": "Trên 5 ngày.",
+      "q8": "Phải nhắc liên tục nên không thể ước tính.",
+      "q9": [
+        "Google Sheets.",
+        "Google Drive hoặc dịch vụ lưu trữ đám mây khác.",
+        "Zalo/Messenger hoặc ứng dụng nhắn tin khác."
+      ],
+      "q10": [
+        "Group chat chung trên Zalo/Messenger."
+      ],
+      "q11": "Mình không nắm rõ.",
+      "q12": "Mình không nắm rõ.",
+      "q14": "Hầu như dự án nào cũng xảy ra.",
+      "q13": [
+        "Thiếu chứng từ cho một khoản chi đã phát sinh.",
+        "Chứng từ bị mờ, thiếu thông tin hoặc không hợp lệ.",
+        "Nhập sai số tiền, ngày hoặc nội dung khoản chi.",
+        "Giao dịch không khớp với chứng từ.",
+        "Chi vượt ngân sách của một hạng mục.",
+        "Chỉ phát hiện sai sót sau khi khoản chi đã xảy ra quá lâu.",
+        "Số liệu giữa các file hoặc công cụ không khớp nhau."
+      ],
+      "q15": [
+        "Phải liên hệ và nhắc lại nhiều thành viên.",
+        "Phải kiểm tra hoặc làm lại báo cáo.",
+        "Thành viên/người phụ trách phải ứng hoặc bù tiền cá nhân.",
+        "Phải giải trình lại với nhà tài trợ.",
+        "Làm người phụ trách tài chính quá tải hoặc không muốn tiếp tục đảm nhiệm vai trò.",
+        "Ảnh hưởng đến uy tín hoặc khả năng xin tài trợ của tổ chức."
+      ],
+      "q16": "5",
+      "q18": "Gom và lưu chứng từ tập trung, dễ tìm lại.",
+      "q19": "Có thể cân nhắc trong tương lai."
+    },
+    {
+      "id": 65,
+      "eligible": false,
+      "q1": "Không, mình chưa từng tham gia các công việc trên trong 12 tháng qua."
+    },
+    {
+      "id": 66,
+      "eligible": false,
+      "q1": "Không, mình chưa từng tham gia các công việc trên trong 12 tháng qua."
+    },
+    {
+      "id": 67,
+      "eligible": false,
+      "q1": "Không, mình chưa từng tham gia các công việc trên trong 12 tháng qua."
+    },
+    {
+      "id": 68,
+      "eligible": false,
+      "q1": "Không, mình chưa từng tham gia các công việc trên trong 12 tháng qua."
+    }
+  ]
+}

@@ -1,14 +1,42 @@
 {
-  "name": "ueh-uii-sandbox-product-brief",
-  "version": "1.0.0",
+  "name": "minh-bach-ui-mvp",
+  "version": "0.1.0",
   "private": true,
-  "description": "Product brief and diagrams for the UII Sandbox 2026 financial transparency concept",
+  "description": "Interactive UI MVP for community sponsorship transparency",
+  "engines": {
+    "node": ">=22.13.0"
+  },
   "scripts": {
-    "diagrams": "mmdc -i diagrams/src/product-overview.mmd -o diagrams/rendered/product-overview.svg -b transparent && mmdc -i diagrams/src/product-overview.mmd -o diagrams/rendered/product-overview.pdf -b transparent && mmdc -i diagrams/src/submission-journey.mmd -o diagrams/rendered/submission-journey.svg -b transparent && mmdc -i diagrams/src/submission-journey.mmd -o diagrams/rendered/submission-journey.pdf -b transparent && mmdc -i diagrams/src/roles-and-permissions.mmd -o diagrams/rendered/roles-and-permissions.svg -b transparent && mmdc -i diagrams/src/roles-and-permissions.mmd -o diagrams/rendered/roles-and-permissions.pdf -b transparent && mmdc -i diagrams/src/bill-lifecycle.mmd -o diagrams/rendered/bill-lifecycle.svg -b transparent && mmdc -i diagrams/src/bill-lifecycle.mmd -o diagrams/rendered/bill-lifecycle.pdf -b transparent && mmdc -i diagrams/src/mvp-roadmap.mmd -o diagrams/rendered/mvp-roadmap.svg -b transparent && mmdc -i diagrams/src/mvp-roadmap.mmd -o diagrams/rendered/mvp-roadmap.pdf -b transparent",
-    "pdf": "mkdir -p output/pdf tmp/pdfs && latexmk -xelatex -interaction=nonstopmode -halt-on-error -outdir=tmp/pdfs template.tex && cp tmp/pdfs/template.pdf output/pdf/minh-bach-tai-chinh-product-brief.pdf",
-    "build": "npm run diagrams && npm run pdf"
+    "dev": "vinext dev",
+    "build": "vinext build",
+    "start": "vinext start",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "16.2.6",
+    "qrcode.react": "^4.2.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
   },
   "devDependencies": {
-    "@mermaid-js/mermaid-cli": "^11.9.0"
-  }
+    "@cloudflare/vite-plugin": "1.37.1",
+    "@cloudflare/workers-types": "4.20260515.1",
+    "@rolldown/binding-darwin-arm64": "^1.2.6",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "@vitejs/plugin-rsc": "0.5.26",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "react-server-dom-webpack": "19.2.6",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3",
+    "vinext": "1.0.0-beta.3",
+    "vite": "8.0.13",
+    "wrangler": "4.92.0"
+  },
+  "type": "module"
 }

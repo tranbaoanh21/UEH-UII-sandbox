@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.xdv
+tmp/
