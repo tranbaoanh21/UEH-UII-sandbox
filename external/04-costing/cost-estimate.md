@@ -1,403 +1,309 @@
-# PHASE 2 — ƯỚC TÍNH CHI PHÍ SẢN PHẨM
+# PHASE 2 — ESTIMATE COST THEO GIAI ĐOẠN SẢN PHẨM
 
-> Sản phẩm: Nền tảng AI quản lý khoản chi, chứng từ và minh bạch tài chính cho dự án cộng đồng
-> Phiên bản: 1.0 — 29/08/2026
-> Đơn vị trình bày: VNĐ, chưa bao gồm VAT và thuế
-> Mục đích: làm đầu vào cho Phase 3 — thiết kế gói và giá bán
+> Phạm vi: cuộc thi quy mô vừa, một developer chính
+> Đơn vị: VNĐ/tháng · Chưa bao gồm VAT/thuế
+> Mục tiêu: biết ở mỗi giai đoạn cần trả bao nhiêu tiền service để sản phẩm chạy được
 
-## 1. Kết luận điều hành
+## 1. Kết quả cần nhớ
 
-### Con số cần nhớ
-
-| Hạng mục | Ước tính |
-|---|---:|
-| Chi phí tiền mặt để đưa MVP lên mức pilot-ready | **11,3 triệu** |
-| Giá trị kinh tế đầy đủ của MVP, gồm 720 giờ công | **135,5 triệu** |
-| Vận hành giai đoạn thử nghiệm | **0,29 triệu/tháng** |
-| Vận hành giai đoạn ra mắt | **3,32 triệu/tháng** |
-| Vận hành giai đoạn mở rộng | **10,37 triệu/tháng** |
-| Chi phí đầy đủ trên một dự án | **khoảng 98.000–166.000/dự án** |
-| Chi phí AI dự phòng trên một khoản chi | **khoảng 111 đồng** |
-
-Hai kết luận quan trọng:
-
-1. **AI không phải chi phí lớn nhất.** Ở quy mô MVP, phần tốn nhiều hơn là hạ tầng tối thiểu để chạy production, hỗ trợ người dùng và công sức phát triển.
-2. **Không nên thuê GPU riêng.** Giai đoạn đầu nên gọi Vision-Language Model qua Hugging Face Inference Providers theo cơ chế pay-as-you-go. Dedicated GPU chỉ hợp lý khi lưu lượng đã lớn và ổn định.
-
-Chi phí 98.000–166.000 đồng/dự án trong tài liệu này **chưa phải giá bán**. Giá bán còn phải bù chi phí bán hàng, phát triển sản phẩm, rủi ro, thuế và lợi nhuận; phần đó được xử lý ở Phase 3.
-
----
-
-## 2. Phạm vi sản phẩm được estimate
-
-Estimate này dành cho một **MVP web có thể pilot với người dùng thật**, gồm:
-
-- Admin/Finance Lead đăng nhập và tạo dự án.
-- Khởi tạo nguồn tài trợ, hạng mục ngân sách và hoạt động.
-- Sinh QR/link riêng cho người nộp khoản chi.
-- Thành viên không cần tài khoản, có thể tải ảnh chuyển khoản, bill hoặc hóa đơn.
-- AI trích xuất dữ liệu thành cấu trúc.
-- AI đối chiếu số tiền, thời gian, người nhận giữa các chứng từ.
-- Budget Guard cảnh báo trùng, gần vượt ngân sách, sai hạng mục hoặc thiếu dữ liệu.
-- Lead phê duyệt, yêu cầu bổ sung hoặc từ chối.
-- Dashboard ngân sách, sổ khoản chi và Cổng minh bạch cho Sponsor.
-- Che dữ liệu nhạy cảm trên bằng chứng công khai.
-- Xuất báo cáo tài chính và tác động dạng PDF.
-
-### Chưa nằm trong estimate MVP
-
-- React Native mobile app.
-- Kết nối webhook với ngân hàng hoặc ví điện tử.
-- Xác minh giao dịch trực tiếp từ ngân hàng/Open Banking.
-- Zalo OA và webhook nhận bill tự động.
-- Chatbot RAG hỏi đáp tài liệu tự do.
-- Sponsor Dashboard tổng hợp nhiều tổ chức.
-- Hạ tầng AWS multi-region, SLA 24/7 hoặc Kubernetes.
-- Marketing trả phí, đội sales, văn phòng và nhân sự full-time.
-
-Những mục này phải được estimate riêng khi được đưa vào roadmap.
-
----
-
-## 3. Giả định chung
-
-| Giả định | Giá trị | Loại |
-|---|---:|---|
-| Tỷ giá lập kế hoạch | 26.000 VNĐ/USD | Giả định làm tròn |
-| Đơn giá giờ công nội bộ | 150.000 VNĐ/giờ | Giả định |
-| Số bằng chứng trung bình/khoản chi | 2 file | Ảnh chuyển khoản + hóa đơn |
-| Kích thước trung bình/file | 1,5 MB | Giả định có nén ảnh |
-| Thời gian lưu bản gốc | 12 tháng | Chính sách MVP |
-| Email hệ thống/khoản chi | 2 email | Gửi thành công + kết quả duyệt |
-| Chi phí hỗ trợ người dùng | 100.000 VNĐ/giờ | Giả định |
-| Dự phòng biến động chi phí | 15% | Giả định |
-
-Tỷ giá 26.000 VNĐ/USD là tỷ giá kế hoạch, không phải báo giá ngoại hối thời gian thực. Phase 3 nên giữ tỷ giá này như một input có thể thay đổi.
-
----
-
-## 4. Chi phí xây dựng MVP một lần
-
-### 4.1. Khối lượng công việc
-
-| Nhóm công việc | Giờ ước tính | Giá trị giờ công |
+| Giai đoạn | Quy mô giả định | Tiền service/tháng |
 |---|---:|---:|
-| Product discovery, requirement và data flow | 50 | 7.500.000 |
-| UX/UI và design system | 70 | 10.500.000 |
-| Frontend web | 160 | 24.000.000 |
-| Backend, API và PostgreSQL | 200 | 30.000.000 |
-| AI/OCR, chuẩn hóa JSON và đối chiếu | 120 | 18.000.000 |
-| QA, bảo mật và quyền riêng tư | 80 | 12.000.000 |
-| CI/CD, monitoring, tài liệu kỹ thuật | 40 | 6.000.000 |
-| **Tổng** | **720 giờ** | **108.000.000** |
+| **MVP Product** | Demo cuộc thi | **0–200.000** |
+| **Pilot** | 5 dự án, 300 khoản chi | **Khoảng 282.000** |
+| **Launch** | 20 dự án, 2.000 khoản chi | **Khoảng 2.171.000** |
+| **Scale** | 100 dự án, 15.000 khoản chi | **Khoảng 5.772.000** |
 
-720 giờ tương đương khoảng 4,5 người-tháng nếu quy đổi 160 giờ/người-tháng. Đây là estimate cho một MVP dùng pilot, không phải chỉ riêng UI demo cho cuộc thi.
-
-### 4.2. Chi phí tiền mặt ban đầu
-
-| Khoản tiền mặt | Dự toán |
-|---|---:|
-| Credit AI/API cho phát triển và kiểm thử | 1.500.000 |
-| Domain năm đầu | 360.000 |
-| Khuyến khích người dùng pilot/nghiên cứu | 2.000.000 |
-| Rà soát bảo mật và quyền riêng tư bên ngoài | 5.000.000 |
-| Thiết bị, dữ liệu test và chi phí phát sinh nhỏ | 1.000.000 |
-| **Tổng tiền mặt trước dự phòng** | **9.860.000** |
-| Dự phòng 15% | 1.479.000 |
-| **Ngân sách tiền mặt nên chuẩn bị** | **11.339.000** |
-
-Nếu nhóm tự code, 108 triệu đồng giờ công không phải số tiền phải trả ngay. Tuy nhiên, nó vẫn là chi phí kinh tế thật và cần được ghi nhận khi đánh giá khả năng hoàn vốn.
-
-### 4.3. Tổng giá trị kinh tế của MVP
+Để lập giá bán ở Phase 3, có thể lấy kịch bản Launch làm mốc:
 
 ```text
-Giá trị kinh tế trước dự phòng
-= 108.000.000 giờ công + 9.860.000 tiền mặt
-= 117.860.000 VNĐ
-
-Ngân sách đầy đủ sau dự phòng 15%
-= 117.860.000 × 1,15
-= 135.539.000 VNĐ
+Service cost Launch ≈ 2.171.000 đồng/tháng
+Service cost/dự án ≈ 108.550 đồng
 ```
+
+> Bảng này chỉ tính tiền service kỹ thuật. Không cộng lương developer, marketing, sales hoặc nhân sự hỗ trợ vận hành.
 
 ---
 
-## 5. Kiến trúc chi phí vận hành
+## 2. Bốn giai đoạn có ý nghĩa gì?
 
-### 5.1. Frontend — Vercel
+### Giai đoạn 1 — MVP Product
 
-- Giai đoạn demo/phi thương mại: Hobby, 0 USD/tháng.
-- Khi bắt đầu bán sản phẩm: Pro, 20 USD/tháng, tương đương khoảng 520.000 VNĐ/tháng.
-- Vercel Hobby được mô tả cho mục đích cá nhân, phi thương mại; không nên lấy Hobby làm giả định khi đã thu phí khách hàng.
+Mục tiêu: chứng minh ý tưởng tại cuộc thi.
 
-Nguồn: https://vercel.com/pricing
+- UI web chạy được luồng Lead → Người nộp → Sponsor.
+- Dữ liệu giả lập trong frontend.
+- AI/OCR có thể mô phỏng.
+- Chưa cần backend và database production.
+- Không cần mobile app, RAG hoặc tích hợp ngân hàng.
 
-### 5.2. Backend — Render
+### Giai đoạn 2 — Pilot
 
-- Pilot nhỏ: Free, chấp nhận cold start và giới hạn tài nguyên.
-- Production nhỏ: Starter 0,5 CPU/512 MB, 7 USD/tháng ≈ 182.000 VNĐ.
-- Khi tải tăng: Standard 1 CPU/2 GB, 25 USD/tháng ≈ 650.000 VNĐ.
+Mục tiêu: kiểm tra sản phẩm với 3–5 dự án thật.
 
-Nguồn: https://render.com/docs/compute-plans
-Tham chiếu giá: https://render.com/articles/render-vs-railway
+- Có backend Node/Express và PostgreSQL.
+- Upload chứng từ thật.
+- Gọi Vision AI thật qua Hugging Face.
+- Một tài khoản Lead/Admin cho mỗi tổ chức thử nghiệm.
+- Thành viên nộp khoản chi không cần tài khoản.
+- Dùng free tier ở những nơi vẫn đáp ứng được pilot.
 
-### 5.3. PostgreSQL — Neon
+### Giai đoạn 3 — Launch
 
-- Free: 0 USD, 0,5 GB storage/project và 100 CU-hours/project/tháng.
-- Launch: usage-based, Neon công bố mức chi tiêu điển hình khoảng 15 USD/tháng.
-- Scale trong model này dùng ngân sách 35 USD/tháng; đây là giả định thận trọng, không phải gói cố định.
+Mục tiêu: bắt đầu cung cấp sản phẩm cho người dùng bên ngoài.
 
-Nguồn: https://neon.com/pricing
+- Khoảng 20 dự án hoạt động mỗi tháng.
+- Hạ tầng trả phí đủ ổn định cho production nhỏ.
+- Email thông báo, backup, lưu file và Cổng minh bạch.
+- Có giới hạn chi tiêu AI và theo dõi lỗi.
+- Đây là giai đoạn phù hợp nhất để tính giá bán ban đầu.
 
-### 5.4. Lưu chứng từ — Cloudflare R2
+### Giai đoạn 4 — Scale
 
-- Miễn phí 10 GB-month, 1 triệu Class A operations và 10 triệu Class B operations mỗi tháng.
-- Phần vượt free tier: 0,015 USD/GB-month.
-- Egress trực tiếp từ R2 miễn phí.
+Mục tiêu: phục vụ khoảng 100 dự án mỗi tháng.
 
-Nguồn: https://developers.cloudflare.com/r2/pricing/
+- Backend và database được nâng tài nguyên.
+- AI xử lý khoảng 15.000 khoản chi/tháng.
+- Bổ sung monitoring, queue và background jobs.
+- Có thể bắt đầu dùng Redis/BullMQ nếu xử lý đồng thời tăng.
+- Vẫn chưa cần Kubernetes hoặc dedicated GPU.
 
-R2 phù hợp hơn việc nhét ảnh bill vào PostgreSQL. Database chỉ nên lưu metadata và object key; file gốc lưu trong object storage.
+---
 
-### 5.5. Email — Resend
+## 3. Chi phí từng giai đoạn
 
-- Free: 3.000 email/tháng, giới hạn 100 email/ngày.
-- Pro: 20 USD/tháng cho 50.000 email.
+### 3.1. MVP Product — Demo cuộc thi
 
-Nguồn: https://resend.com/docs/knowledge-base/what-is-resend-pricing
+### Service cần dùng
 
-### 5.6. AI — Hugging Face Inference Providers
+| Service | Cách dùng | Chi phí/tháng |
+|---|---|---:|
+| Frontend | Chạy local hoặc Vercel Hobby | 0 |
+| Backend | Chưa cần hoặc mock API | 0 |
+| Database | Dữ liệu giả trong frontend | 0 |
+| AI/OCR | Mô phỏng kết quả | 0 |
+| File storage | Dùng ảnh demo có sẵn | 0 |
+| Email | Chưa cần | 0 |
+| Domain | Dùng URL miễn phí | 0 |
+| **Tổng cơ sở** |  | **0** |
 
-Hugging Face cho phép route request tới nhiều inference provider bằng một HF token. Nếu dùng HF-routed request:
+Ngân sách đề xuất: **0–200.000 đồng/tháng**, trong trường hợp muốn mua một ít AI credits hoặc domain để demo đẹp hơn.
 
-- Thanh toán pay-as-you-go qua tài khoản Hugging Face.
-- Không cần tự tạo tài khoản riêng với từng provider.
-- Hugging Face công bố không cộng thêm markup; giá bằng giá provider.
-- Có thể dùng hậu tố `:cheapest` để ưu tiên provider có giá output token thấp nhất.
+### Công sức phát triển
 
-Nguồn: https://huggingface.co/docs/inference-providers/pricing
-Nguồn kỹ thuật: https://huggingface.co/docs/inference-providers/index
+- Khoảng 40–80 giờ cho UI, interaction và dữ liệu demo.
+- Không quy đổi giờ làm thành tiền service.
 
-Kiến trúc đề xuất:
+---
+
+### 3.2. Pilot — 5 dự án thật
+
+### Giả định
 
 ```text
-Backend nhận file
-    ↓
-Lưu file gốc vào R2
-    ↓
-Gọi VLM qua Hugging Face Inference Providers
-    ↓
-Nhận JSON có cấu trúc
-    ↓
-Backend chạy rule Budget Guard
-    ↓
-Lead xác nhận
+5 dự án/tháng
+60 khoản chi/dự án
+= 300 khoản chi/tháng
 ```
 
-Không cần RAG cho luồng này. Đây là structured extraction + rule engine.
+### Service cần dùng
 
----
+| Service | Gói giả định | Chi phí/tháng |
+|---|---|---:|
+| Vercel | Hobby, pilot phi thương mại | 0 |
+| Render | Starter backend | 182.000 |
+| Neon | Free | 0 |
+| Cloudflare R2 | Trong free tier | 0 |
+| Resend | Free, dưới 3.000 email | 0 |
+| Hugging Face AI | 300 × 111 đồng | 33.345 |
+| Domain | Phân bổ theo tháng | 30.000 |
+| **Subtotal** |  | **245.345** |
+| Dự phòng 15% |  | 36.802 |
+| **Tổng Pilot** |  | **282.147** |
 
-## 6. Tính chi phí AI trên một khoản chi
-
-Model dùng để lập ngân sách: một VLM cỡ nhỏ/trung bình như Qwen VL, gọi qua HF-routed provider. Giá tham chiếu cho Qwen3 VL 30B trên Fireworks:
-
-- Input: 0,15 USD/1 triệu token.
-- Output: 0,60 USD/1 triệu token.
-- Một ảnh phổ biến thường tiêu thụ khoảng 1.000–2.500 image token; model dùng 1.750 token/ảnh làm giả định giữa.
-
-Nguồn giá: https://docs.fireworks.ai/serverless/pricing
-Nguồn image token: https://docs.fireworks.ai/faq-new/billing-pricing/how-many-tokens-per-image
-
-### Công thức
+Làm tròn để trình bày: **khoảng 280.000 đồng/tháng**.
 
 ```text
-Input token/khoản chi
-= 2 ảnh × 1.750 + 600 token prompt
-= 4.100 token
-
-Output token/khoản chi
-= 400 token JSON
-
-Chi phí model cơ sở
-= [(4.100 × 0,15) + (400 × 0,60)] / 1.000.000
-= 0,000855 USD
-
-Sau retry factor 1,25 và safety multiplier 4 lần
-= 0,000855 × 1,25 × 4
-= 0,004275 USD
-
-Quy đổi
-= 0,004275 × 26.000
-= 111,15 VNĐ/khoản chi
+Service cost/dự án ≈ 282.147 / 5
+≈ 56.400 đồng/dự án
 ```
 
-Safety multiplier 4 lần được thêm để dự phòng retry, ảnh khó đọc, bước che dữ liệu và việc phải chuyển sang model/provider đắt hơn. Vì vậy 111 đồng là ngân sách thận trọng, không phải chỉ là giá của một inference call thành công.
+### Chức năng cần phát triển thêm
 
-### Vì sao không thuê GPU riêng?
+- Backend API và PostgreSQL.
+- Admin authentication.
+- Upload file vào object storage.
+- Vision AI trả về JSON.
+- Hàng chờ duyệt và Budget Guard cơ bản.
 
-Hugging Face Dedicated Inference Endpoint có thể bắt đầu khoảng 0,5 USD/GPU-hour tùy cấu hình. Một GPU chạy liên tục 730 giờ/tháng sẽ khoảng:
+Effort bổ sung ước tính: **200–300 giờ**.
+
+---
+
+### 3.3. Launch — 20 dự án/tháng
+
+### Giả định
 
 ```text
-0,5 × 730 × 26.000 = 9.490.000 VNĐ/tháng
+20 dự án/tháng
+100 khoản chi/dự án
+= 2.000 khoản chi/tháng
 ```
 
-Trong khi 15.000 khoản chi/tháng theo model pay-as-you-go chỉ cần khoảng 1,67 triệu đồng AI, đã gồm safety multiplier. Vì vậy dedicated GPU chưa hợp lý trong MVP.
+### Service cần dùng
 
-Nguồn endpoint: https://huggingface.co/docs/inference-endpoints/guides/access
+| Service | Gói giả định | Chi phí/tháng |
+|---|---|---:|
+| Vercel | Pro | 520.000 |
+| Render | Starter backend | 182.000 |
+| Neon | Launch, mức dùng điển hình 15 USD | 390.000 |
+| Cloudflare R2 | Khoảng 70 GB steady-state | 23.522 |
+| Resend | Pro, 50.000 email | 520.000 |
+| Hugging Face AI | 2.000 × 111 đồng | 222.300 |
+| Domain | Phân bổ theo tháng | 30.000 |
+| Monitoring | Free tier | 0 |
+| **Subtotal** |  | **1.887.822** |
+| Dự phòng 15% |  | 283.173 |
+| **Tổng Launch** |  | **2.170.995** |
 
----
-
-## 7. Ba kịch bản vận hành
-
-### 7.1. Định nghĩa kịch bản
-
-| Driver | Pilot | Launch | Scale |
-|---|---:|---:|---:|
-| Dự án mới/tháng | 3 | 20 | 100 |
-| Khoản chi/dự án | 75 | 100 | 150 |
-| Khoản chi/tháng | 225 | 2.000 | 15.000 |
-| File/khoản chi | 2 | 2 | 2 |
-| Dung lượng mới/tháng | 0,66 GB | 5,86 GB | 43,95 GB |
-| Dung lượng steady-state sau 12 tháng | 7,91 GB | 70,31 GB | 527,34 GB |
-| Giờ hỗ trợ sản phẩm/tháng | 2 | 10 | 40 |
-
-### 7.2. Chi phí cố định hàng tháng
-
-| Hạng mục | Pilot | Launch | Scale |
-|---|---:|---:|---:|
-| Vercel | 0 | 520.000 | 520.000 |
-| Render | 0 | 182.000 | 650.000 |
-| Neon | 0 | 390.000 | 910.000 |
-| Resend | 0 | 520.000 | 520.000 |
-| Monitoring/logging | 0 | 0 | 520.000 |
-| Domain phân bổ theo tháng | 30.000 | 30.000 | 30.000 |
-| **Tổng cố định** | **30.000** | **1.642.000** | **3.150.000** |
-
-Monitoring/logging 520.000 đồng ở kịch bản Scale là ngân sách giả định 20 USD/tháng, chưa gắn với một vendor bắt buộc.
-
-### 7.3. Tổng chi phí vận hành
-
-| Hạng mục | Pilot | Launch | Scale |
-|---|---:|---:|---:|
-| Chi phí cố định | 30.000 | 1.642.000 | 3.150.000 |
-| AI pay-as-you-go | 25.009 | 222.300 | 1.667.250 |
-| R2 storage sau free tier | 0 | 23.522 | 201.764 |
-| Hỗ trợ người dùng | 200.000 | 1.000.000 | 4.000.000 |
-| **Subtotal** | **255.009** | **2.887.822** | **9.019.014** |
-| Dự phòng 15% | 38.251 | 433.173 | 1.352.852 |
-| **Tổng/tháng** | **293.260** | **3.320.995** | **10.371.866** |
-| **Chi phí/dự án** | **97.753** | **166.050** | **103.719** |
-| **Chi phí/khoản chi** | **1.303** | **1.660** | **691** |
-
-### Vì sao Launch đắt hơn trên mỗi dự án?
-
-Launch vừa vượt các free tier nên phải bắt đầu trả Vercel, database và email, nhưng số dự án chưa đủ lớn để phân bổ chi phí cố định. Khi đạt Scale, chi phí trên một dự án giảm nhờ hiệu ứng quy mô.
-
----
-
-## 8. Chi phí nào thực sự quyết định giá bán?
-
-Ở kịch bản Launch:
-
-| Thành phần | Tỷ trọng xấp xỉ |
-|---|---:|
-| Hạ tầng và dịch vụ cố định | 49% |
-| Hỗ trợ người dùng | 30% |
-| Dự phòng | 13% |
-| AI | 7% |
-| Storage | <1% |
-
-Thông điệp cần dùng khi thuyết trình:
-
-> Sản phẩm không đắt vì “gọi AI”. Chi phí chủ yếu đến từ việc duy trì một dịch vụ ổn định, bảo vệ chứng từ, hỗ trợ người dùng và tiếp tục phát triển sản phẩm.
-
----
-
-## 9. Chi phí của Lead không được cộng vào COGS
-
-Lead vẫn phải duyệt khoản chi. Đây là thời gian của tổ chức khách hàng, không phải chi phí trực tiếp của SaaS nên không cộng vào bảng vận hành phía trên.
-
-Tuy nhiên, đây là input quan trọng cho Phase 3 vì sản phẩm tạo ra giá trị bằng cách giảm thời gian:
-
-- Đi đòi và gom chứng từ.
-- Nhập dữ liệu từ ảnh vào Sheet.
-- Tìm lại bill bị trôi trong Zalo/Drive.
-- Đối chiếu thủ công số tiền và thời gian.
-- Tổng hợp báo cáo cuối dự án.
-
-Giá bán không chỉ dựa trên cost-plus; còn phải dựa trên số giờ công và rủi ro mà sản phẩm giúp khách hàng tiết kiệm.
-
----
-
-## 10. Rủi ro làm estimate thay đổi
-
-| Rủi ro | Ảnh hưởng | Cách kiểm soát |
-|---|---|---|
-| Chứng từ tiếng Việt khó đọc làm tăng retry | Tăng AI cost | Nén/chuẩn hóa ảnh, confidence threshold, fallback model |
-| Người dùng tải file quá lớn | Tăng storage | Resize ảnh phía client, giới hạn 10 MB/file |
-| Nhiều email hơn dự kiến | Tăng Resend plan | In-app status trước, email cho sự kiện quan trọng |
-| Backend xử lý AI đồng bộ | Tăng timeout/tài nguyên | Queue background jobs khi volume tăng |
-| Lưu chứng từ quá lâu | Tăng storage và rủi ro privacy | Retention policy, archive/delete theo dự án |
-| Phải hỗ trợ thủ công nhiều | Tăng chi phí lớn nhất | UX rõ, validation trước upload, hướng dẫn trong form |
-| Tỷ giá hoặc vendor tăng giá | Tăng COGS | Budget 15%, billing cap và provider abstraction |
-
----
-
-## 11. Quyết định kỹ thuật được đề xuất cho MVP
-
-1. **Frontend:** Vercel Hobby khi demo, nâng Pro ngay khi thu phí.
-2. **Backend:** Render Free cho thử nghiệm, Starter cho pilot production.
-3. **Database:** Neon Free trước; dùng một database chung và `project_id`, không tạo một Neon project cho mỗi dự án khách hàng.
-4. **File:** Cloudflare R2; không lưu binary trong PostgreSQL.
-5. **AI:** Hugging Face Inference Providers, gọi VLM theo pay-as-you-go và đặt spending limit.
-6. **Budget Guard:** rule engine trong backend trước; không dùng LLM cho các phép so sánh số học xác định.
-7. **Chatbot/RAG:** chưa làm ở MVP.
-8. **Dedicated GPU:** chưa thuê.
-9. **Bank verification:** ngoài phạm vi MVP; ảnh chuyển khoản chỉ là bằng chứng người dùng cung cấp.
-
----
-
-## 12. Công thức chuyển sang Phase 3
-
-Phase 3 sẽ bắt đầu từ các công thức:
+Làm tròn để trình bày: **khoảng 2,17 triệu đồng/tháng**.
 
 ```text
-COGS trên một dự án
-= Tổng chi phí vận hành tháng / số dự án trả phí tháng
-
-Gross margin
-= (Giá bán − COGS) / Giá bán
-
-Giá sàn theo gross margin mục tiêu
-= COGS / (1 − gross margin mục tiêu)
+Service cost/dự án ≈ 2.170.995 / 20
+≈ 108.550 đồng/dự án
 ```
 
-Ví dụ, với Launch COGS khoảng 166.000 đồng/dự án:
+### Chức năng cần hoàn thiện thêm
 
-| Gross margin mục tiêu | Giá sàn toán học |
-|---|---:|
-| 50% | 332.000 |
-| 60% | 415.000 |
-| 65% | 474.000 |
-| 70% | 553.000 |
+- Production security và phân quyền ổn định.
+- Email thông báo trạng thái.
+- Backup và chính sách lưu chứng từ.
+- Che dữ liệu nhạy cảm trên Cổng minh bạch.
+- Xuất báo cáo PDF.
+- Logging, rate limit và spending cap.
 
-Đây chỉ là giá sàn theo cost. Phase 3 phải đối chiếu thêm mức sẵn sàng chi trả, phân khúc CLB/NPO/CSR và giá trị thời gian được tiết kiệm trước khi chốt giá niêm yết.
+Effort bổ sung từ Pilot: **120–200 giờ**.
 
 ---
 
-## 13. Nguồn giá chính thức
+### 3.4. Scale — 100 dự án/tháng
 
-Truy cập ngày 29/08/2026:
+### Giả định
+
+```text
+100 dự án/tháng
+150 khoản chi/dự án
+= 15.000 khoản chi/tháng
+```
+
+### Service cần dùng
+
+| Service | Gói giả định | Chi phí/tháng |
+|---|---|---:|
+| Vercel | Pro | 520.000 |
+| Render | Standard backend | 650.000 |
+| Neon | Ngân sách usage 35 USD | 910.000 |
+| Cloudflare R2 | Khoảng 527 GB steady-state | 201.764 |
+| Resend | Pro, dưới 50.000 email | 520.000 |
+| Hugging Face AI | 15.000 × 111 đồng | 1.667.250 |
+| Monitoring/logging | Ngân sách 20 USD | 520.000 |
+| Domain | Phân bổ theo tháng | 30.000 |
+| **Subtotal** |  | **5.019.014** |
+| Dự phòng 15% |  | 752.852 |
+| **Tổng Scale** |  | **5.771.866** |
+
+Làm tròn để trình bày: **khoảng 5,77 triệu đồng/tháng**.
+
+```text
+Service cost/dự án ≈ 5.771.866 / 100
+≈ 57.700 đồng/dự án
+```
+
+### Chức năng/hạ tầng cần bổ sung
+
+- Background job cho AI processing.
+- Queue, retry và dead-letter handling.
+- Monitoring và cảnh báo lỗi.
+- Database indexing và tối ưu query.
+- Rate limiting, audit log và backup tốt hơn.
+- Redis/BullMQ chỉ khi đã có nhu cầu thực tế.
+
+Effort bổ sung từ Launch: **200–400 giờ**.
+
+---
+
+## 4. Bảng so sánh cuối cùng
+
+| Chỉ số | MVP Product | Pilot | Launch | Scale |
+|---|---:|---:|---:|---:|
+| Dự án/tháng | Demo | 5 | 20 | 100 |
+| Khoản chi/tháng | Mock | 300 | 2.000 | 15.000 |
+| Tiền service/tháng | 0–200.000 | 282.147 | 2.170.995 | 5.771.866 |
+| Service cost/dự án | Không áp dụng | 56.400 | 108.550 | 57.700 |
+| AI/tháng | 0 | 33.345 | 222.300 | 1.667.250 |
+| Dedicated GPU | Không | Không | Không | Chưa cần |
+
+### Vì sao Launch có cost/dự án cao nhất?
+
+Launch là thời điểm vừa phải trả các gói production như Vercel Pro, Neon Launch và Resend Pro, nhưng mới có 20 dự án để phân bổ chi phí. Khi lên Scale, số dự án tăng nhanh hơn chi phí cố định nên cost/dự án giảm.
+
+---
+
+## 5. Chi phí AI có đáng lo không?
+
+Chưa đáng lo trong bốn giai đoạn này.
+
+Giả định AI đã bao gồm:
+
+- Hai ảnh cho mỗi khoản chi.
+- JSON output có cấu trúc.
+- Retry khi ảnh khó đọc.
+- Dự phòng đổi model/provider.
+- Một phần xử lý che dữ liệu.
+
+Ngân sách bảo thủ:
+
+```text
+Khoảng 111 đồng/khoản chi
+```
+
+Nên gọi model bằng Hugging Face Inference Providers theo pay-as-you-go. Không cần thuê GPU riêng vì GPU chạy liên tục có thể tốn khoảng 9,5 triệu đồng/tháng — cao hơn toàn bộ service cost của kịch bản Scale hiện tại.
+
+---
+
+## 6. Những khoản không nằm trong “tiền service”
+
+Để tránh hiểu sai, bảng trên không bao gồm:
+
+- Lương hoặc giờ công của developer.
+- Thời gian Lead duyệt chứng từ.
+- Nhân sự chăm sóc khách hàng.
+- Marketing, sales và quảng cáo.
+- Phí pháp lý, thành lập doanh nghiệp hoặc kế toán.
+- Payment gateway và thuế khi bắt đầu bán.
+- Mobile app, Open Banking, Zalo OA và chatbot RAG.
+
+Các khoản này chỉ được bổ sung khi Phase 3 tính business model đầy đủ.
+
+---
+
+## 7. Kết luận cho cuộc thi
+
+Thông điệp nên trình bày:
+
+> Nhóm có thể hoàn thiện MVP Product gần như không tốn tiền service. Khi pilot với năm dự án thật, chi phí chỉ khoảng 280.000 đồng mỗi tháng. Khi launch cho 20 dự án, nền tảng cần khoảng 2,17 triệu đồng mỗi tháng; và khi scale lên 100 dự án, chi phí service khoảng 5,77 triệu đồng mỗi tháng.
+
+Điều này chứng minh sản phẩm có thể bắt đầu nhỏ, tận dụng free tier và chỉ nâng cấp hạ tầng khi đã có người dùng.
+
+---
+
+## 8. Nguồn giá service
 
 - Vercel: https://vercel.com/pricing
-- Render compute: https://render.com/docs/compute-plans
-- Render price reference: https://render.com/articles/render-vs-railway
+- Render: https://render.com/docs/compute-plans
 - Neon: https://neon.com/pricing
 - Cloudflare R2: https://developers.cloudflare.com/r2/pricing/
 - Resend: https://resend.com/docs/knowledge-base/what-is-resend-pricing
-- Hugging Face Inference Providers pricing: https://huggingface.co/docs/inference-providers/pricing
-- Hugging Face Inference Providers: https://huggingface.co/docs/inference-providers/index
-- Hugging Face Inference Endpoints: https://huggingface.co/docs/inference-endpoints/guides/access
-- Fireworks VLM pricing: https://docs.fireworks.ai/serverless/pricing
-- Fireworks image token estimate: https://docs.fireworks.ai/faq-new/billing-pricing/how-many-tokens-per-image
+- Hugging Face: https://huggingface.co/docs/inference-providers/pricing
+- Fireworks VLM reference: https://docs.fireworks.ai/serverless/pricing
+
+Chi tiết công thức và giả định được lưu tại [`cost-model-notes.md`](cost-model-notes.md).
