@@ -1,74 +1,95 @@
-# Minh Bạch — UI MVP
+# UII — UI MVP
 
-Prototype frontend cho nền tảng AI quản lý khoản chi, chứng từ và minh bạch tài chính của dự án cộng đồng.
+Prototype frontend cho nền tảng minh bạch tài chính cộng đồng: thành viên nộp bill không cần tài khoản, AI hỗ trợ chuẩn hóa dữ liệu, Finance Lead kiểm duyệt và Sponsor theo dõi các khoản đã được ghi nhận.
 
-> Đây là UI demo sử dụng dữ liệu giả. Chưa có backend, database, upload thật hoặc AI thật.
+> Đây là demo tương tác bằng dữ liệu giả. Chưa có backend, database, upload cloud, OCR/AI thật hoặc xác minh ngân hàng.
 
-## Bắt đầu ở đâu?
+## Chạy dự án
 
-### Nếu bạn muốn chạy sản phẩm
+Yêu cầu Node.js `>=22.13.0`.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Mở http://localhost:3000.
+Mở [http://localhost:3000](http://localhost:3000).
 
-### Nếu bạn muốn sửa UI
+Nếu máy đang dùng NVM:
 
-Đi theo thứ tự:
+```bash
+nvm use 24
+npm run dev
+```
 
-1. `app/page.tsx` — entry page.
-2. `app/mvp-demo.tsx` — toàn bộ màn hình và interaction của MVP.
-3. `app/globals.css` — màu, typography và style dùng chung.
-4. `app/layout.tsx` — metadata và font.
+## Luồng demo
 
-### Nếu bạn muốn hiểu ý tưởng cuộc thi
+Màn đầu tiên là Demo Launcher với ba vai trò:
 
-Bắt đầu tại [`external/README.md`](external/README.md), sau đó đọc:
+- **Admin / Finance Lead:** đăng nhập demo, quản lý cấp tổ chức và dự án, kiểm tra khoản chi, ngân sách, báo cáo, link chia sẻ và chatbot.
+- **Thành viên:** nộp bill, kiểm tra dữ liệu AI, nhận private tracking link, xem “Bill của tôi” và bổ sung ảnh.
+- **Sponsor:** xem ngân sách, sổ khoản chi được duyệt và bằng chứng đã che dữ liệu nhạy cảm.
 
-1. [`external/01-product/latest-requirements.md`](external/01-product/latest-requirements.md)
-2. [`external/01-product/product-brief.md`](external/01-product/product-brief.md)
-3. [`external/04-costing/cost-estimate.md`](external/04-costing/cost-estimate.md)
+Các vai trò dùng chung state. Khi Lead phê duyệt một khoản, số liệu ngân sách, báo cáo, tracking của thành viên, chatbot và Cổng minh bạch cùng cập nhật.
 
-## Luồng demo chính
-
-1. Lead xem dashboard dự án.
-2. Người nộp mở link/QR mà không cần tài khoản.
-3. Người nộp khai khoản chi và tải ảnh chuyển khoản, hóa đơn hoặc cả hai.
-4. AI giả lập đọc, chuẩn hóa và đối chiếu hai bằng chứng.
-5. Lead phê duyệt, yêu cầu bổ sung hoặc từ chối.
-6. Khoản được duyệt cập nhật ngân sách và Cổng minh bạch.
-7. Sponsor xem sổ công khai và bằng chứng đã che dữ liệu nhạy cảm.
-
-Thanh chuyển vai trò cuối màn hình cho phép đi nhanh giữa **Lead**, **Người nộp** và **Sponsor**.
-
-## Cấu trúc root
+## Cấu trúc source
 
 ```text
 .
-├── app/                 # Source UI MVP
-├── public/              # Static assets của web
-├── external/            # Tài liệu cuộc thi, nghiên cứu và deliverables
-├── package.json         # Scripts và dependencies
-├── vite.config.ts       # Cấu hình Vinext/Vite
-└── README.md            # Điểm bắt đầu của repository
+├── app/
+│   ├── globals.css             # Design tokens và theme UII
+│   ├── layout.tsx              # Font, metadata và providers
+│   └── mvp-demo.tsx            # Điều phối các surface của demo
+├── components/
+│   ├── product/
+│   │   ├── admin-shell.tsx     # Navigation và chatbot Admin
+│   │   ├── admin-views.tsx     # Tổ chức, dự án, review, budget, report, share
+│   │   ├── member-flow.tsx     # Nộp bill, AI review, tracking, bổ sung ảnh
+│   │   ├── public-portal.tsx   # Cổng Sponsor và bằng chứng công khai
+│   │   ├── demo-context.tsx    # State và interaction liên kết
+│   │   └── shared.tsx          # Brand và component sản phẩm dùng chung
+│   └── ui/                     # shadcn/Base UI primitives
+├── lib/
+│   ├── demo-data.ts            # Seed data
+│   ├── demo-selectors.ts       # Số liệu dẫn xuất
+│   └── demo-types.ts           # TypeScript types
+├── public/brand/               # Logo UII đã tối ưu cho web
+├── assets/UII/                 # File logo nguồn do team cung cấp
+└── external/                   # Tài liệu cuộc thi, khảo sát, costing và diagram
 ```
 
-Các thư mục `node_modules`, `.next`, `.vinext` và `.wrangler` là file sinh tự động, không cần đọc hoặc commit.
+## Design system
+
+- Nhận diện UII: tím tin cậy làm primary, cam/vàng làm accent tiết chế.
+- Font: Be Vietnam Pro.
+- Component foundation: shadcn với Base UI.
+- Icon: Lucide.
+- Admin dùng table và divider để ưu tiên mật độ dữ liệu.
+- Thành viên mobile-first, một hành động chính mỗi bước.
+- Sponsor chỉ xem dữ liệu đã duyệt và đã che thông tin nhạy cảm.
 
 ## Kiểm tra source
 
 ```bash
-npm run build
+npx tsc --noEmit
 npm run lint
+npm run build
 ```
 
 ## Phạm vi mô phỏng
 
-- AI/OCR được mô phỏng bằng độ trễ và dữ liệu cố định.
-- Trạng thái phê duyệt chỉ tồn tại trong memory của trình duyệt.
-- QR và đường dẫn chỉ minh họa hai luồng chia sẻ riêng.
-- Không xác minh giao dịch trực tiếp với ngân hàng hoặc ví điện tử.
+- Ảnh được chọn chỉ dùng để hiển thị tên file trong trình duyệt, không tải lên server.
+- AI/OCR được mô phỏng bằng độ trễ và seed data cố định.
+- Chatbot trả lời từ dữ liệu demo và liên kết tới khoản chi nguồn.
+- State được lưu trong `localStorage` để các thay đổi không mất khi tải lại trang.
+- QR chứa URL minh họa đúng theo dự án nhưng domain chưa được triển khai.
+- Chia sẻ Zalo dùng native share sheet hoặc clipboard, không dùng OA/webhook.
+- Xuất CSV hoạt động phía client; nút PDF dùng chế độ in của trình duyệt.
 
+## Tài liệu ý tưởng
+
+Đọc theo thứ tự:
+
+1. [`external/01-product/latest-requirements.md`](external/01-product/latest-requirements.md)
+2. [`external/01-product/product-brief.md`](external/01-product/product-brief.md)
+3. [`external/04-costing/cost-estimate.md`](external/04-costing/cost-estimate.md)

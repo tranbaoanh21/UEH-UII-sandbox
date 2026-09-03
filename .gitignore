@@ -3,5 +3,5 @@ node_modules/
 .vinext/
 .wrangler/
 dist/
+*.tsbuildinfo
 .DS_Store
-
